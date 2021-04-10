@@ -30,11 +30,11 @@
   - KW 21 + Selbstsstudium
   - KW 22 + Selbstsstudium
   - KW 23 + Seminar & Selbstsstudium
-- Dokumentation und Präsentation - 106 Stunden
+- Dokumentation und Präsentation - 74 Stunden
   - KW 24 + Seminar & Selbstsstudium
   - KW 25 + Seminar & Selbstsstudium
+- Abschluss und Fazit - 64 Stunden
   - KW 26 + Selbstsstudium
-- Abschluss und Fazit - 32 Stunden
   - KW 27 + Selbstsstudium
 ### ENDE / Abgabe
 - KW 28
