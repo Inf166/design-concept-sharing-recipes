@@ -23,7 +23,7 @@
   - KW 16 + Seminar & Selbstsstudium 
   - KW 17 + Seminar & Selbstsstudium
 - Konzeptuelles Design - 102 Stunden
-- KW 18 + Selbstsstudium              
+  - KW 18 + Selbstsstudium              
   - KW 19 + Seminar & Selbstsstudium
   - KW 20 + Seminar & Selbstsstudium
 - Interface Design - 101 Stunden
