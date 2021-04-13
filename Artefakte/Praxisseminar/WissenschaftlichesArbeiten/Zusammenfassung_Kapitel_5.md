@@ -1,0 +1,92 @@
+# 5. Kapitel - Wissenschaftliche Grundlagen
+### Intro
+- Um wissenschaftlich zu arbeiten muss man *kein* Wissenschaftler sein, es reicht nach den *Formvorschriften* und *Methoden* der Wissenschaft vorzugehen.
+  - Das bedeutet die eigene Arbeit wissenschaftlich zu belegen, angemessen zu argumentieren und die Forschungsfrage in einem adäquaten wissenschaftlichen Forschungsprozess abzuarbeiten
+- Im Zentrum der Arbeit sollte das Machbare und nicht das Mögliche stehen, d.h. sich selbst nicht übernehmen.
+- Die Feststellung, etwas nicht sicher sagen zu können, darf nicht bedeuten, gar nichts festzustellen.
+  - Deswegen sollte man *hohe Ansprüche* an sich selber stellen und weiter arbeiten.
+- Zweck der Wissenschaftlichen Arbeit sollte es sein, *neue Erkenntnisse* hervorzubringen und der *Wissenschaftliche Beitrag* zu einem Fachgebiet.
+- Wie erreicht man das?
+  - Systematisch und methodisch vorgehen
+  - objektiv formulieren
+    - Wissenschaftliche Aussagen besitzen einen Erklärungswert
+    - Wissenschaftliche Aussagen sind *überprüfbar*
+    - Wissenschaftliche Aussagen sind allgemeingültig bzw treffen mit einer angegebenen Wahrscheinlichkeit zu
+    - Wissenschaftliche Aussagen sind *objektiv*
+    - Die Art und Weise, wie wissenschaftliche Aussagen gewonnen wurden, ist wiederholbar
+    - Wissenschaftliche Aussagen sind in wissenschaftlicher Form ( Zitation ) und in wissenschaftlichem Stil neutral ( bzw . durch Kenntlichmachung wertender Aussagen ) formuliert
+    - Wissenschaftliche Theorien sind Systeme die es erlauben möglichst viele Beobachtungen zu beschreiben, vorherzusagen und zu erklären .
+- Wissenschaftliche Aussagen zeichnen sich durch *überprüfbare Tatsachen/empirische Daten* bzw . Aussagen aus der Literatur/Zitate belegt werden können, aus.
+  - State of the Art
+    - des jeweiligen Fachbereiches entsprechen , müssen nicht belegt werden
+  - Tautologien wie „ Entweder es regnet oder es regnet nicht . “ 
+    - liefern keinen wirklich wissenschaftlicher Mehrwert
+  - Festzuhalten ist , dass alle grundlegenden Aussagen eines Beleges oder eines Beweises ( Zitat , empirische Daten ) bedürfen .
+- Definition ist ein sprachlicher Konsens über das Verständnis eines Begriffes .
+### Theorie
+- Eine *Theorie* fasst die Gesamtheit des gewonnenen Wissens zusammen und *stellt eine wissenschaftliche Annäherung* an einen Ausschnitt der Wirklichkeit dar
+  - Überlegungen 
+  - Berechnungen
+  - Beobachtungen und Experimenten 
+- Vorgehen
+  - Deduktion ( Schluss vom Allgemeinen auf das Besondere )
+    - *Deduktion* beweist , dass etwas sein muss .
+  - Induktion ( Schluss vom Besonderen auf das Allgemeine )
+    - *Induktion* zeigt , dass etwas durchaus wahrscheinlich , aber nicht zwingend wahr ist .
+  - das zirkuläre Modell , die sogenannte Abduktion ,
+    - *Abduktion* deutet lediglich darauf hin , dass etwas sein kann .
+- Die Theorie ist bei induktiver Vorgangsweise das Resultat 
+  - und bei deduktiver Vorgangsweise der Ausgangspunkt einer empirischen Untersuchung .
+  - Sie treffen einige wenige Beobachtungen: 
+    - Was kann dahinter stehen ? 
+    - Theorie ( n ) zum Fachgebiet sammeln Formulieren einer Hypothese
+    - Bestätigung oder Ablehnung der Hypothese mit Begründung als Beitrag zur Theorie
+  - Wenden Sie dabei bekannte theoretische Ansätze, Modelle oder Mechanismen in bzw . an einem speziellen und konkreten Fall an .
+### Hypothesen
+- Eine wissenschaftliche *Hypothese*
+  - muss *allgemeingültig* sein
+  - muss als *Konditionalsatz* formuliert sein ( „ wenn - dann “ bzw . „ je - desto “ )
+  - muss *falsifizierbar* ( widerlegbar ) sein
+  - dazu dürfen die *Variablen* nur einseitig und *nicht* voneinander *abhängig* sein
+- Arten von *Hypothesen*:
+  - Zusammenhangshypothesen : Zwischen zwei oder mehreren Merkmalen besteht ein Zusammenhang .
+  - Unterschiedshypothesen : Zwei oder mehrere Populationen unterscheiden sich in einem oder mehreren Merkmalen .
+  - Veränderungshypothesen : Die Ausprägungen einer abhängigen Variablen verändern sich im Lauf der Zeit .
+  - Zusätzlich zur Überprüfung muss eine Nullhypothese gebildet, die zeigt, dass es keinen Zusammenhang zwischen der unabhängigen und der abhängigen Variablen gibt
+    - empfohlen eine Kontrollgruppe einzurichten 
+      - bei der die abhängige Variable nicht zur Wirkung kommt
+  - Neben den Wenn - dann - Hypothesen ( Konditionalsatz ) können auch Je - desto - Hypothesen gebildet werden : „ Je höher der Bildungsgrad einer Person , desto höher das Lebenseinkommen . “
+  - Neben dieser Individualhypothese , eine Person betreffend , kann diese auch als Kollektivhypothese formuliert werden : „ Je höher der Bildungsgrad in einer Region , umso niedriger die Geburtenrate . “
+  - Kontexthypothesen kombinieren individuelle Merkmale mit kollektiven Merkmalen
+  - Sehr häufig kann die Abhängigkeit der ( oder von mehreren ) bedingten Variablen von der unbedingten Variablen einer Hypothese nach der Überprüfung in der Empirie mit einer bestimmten Wahrscheinlichkeit gemessen werden
+    - ( z . B . mehr als 90 % ) sprechen wir von einer probabilistischen Hypothese .
+    - Bei einer 100 % igen Wahrscheinlichkeit sprechen wir von einer deterministischen Hypothese
+### Argumentationen
+- Gerade in der Wissenschaft haben Autor * innen darauf zu achten , dass ihre Aussagen und *Argumentationen* *verständlich und glaubwürdig* , aber frei von manipulativen Elementen formuliert werden
+  - Die Makrostruktur der Argumentation ist im Wesentlichen die Gliederung Ihrer Arbeit .
+  - *beschreibend* ( Aussagen über Vergangenheit , Gegenwart , Zukunft ) oder *wertend* ( was getan werden soll , was richtig oder falsch ist ) .
+  - Dies kann auch durch Berufung auf eine Autorität , also etwa durch Zitat bzw . Verweis auf [ 97 ] einen bereits erfolgten
+  - Auch *anderslautende* *Meinungen* anderer Autor * innen sollen in den eigenen Text aufgenommen werden .
+  - Positiv formulierte Aussagen sind zu bevorzugen .
+  - *keine unseriösen Wendungen*
+  - Wertende Begriffe wie „ vernünftig “ , „ ethisch “ , „ moralisch “ etc . müssen mit einem entsprechenden *Bewertungsmaßstab* versehen werden .
+- Unbewiesene Behauptungen sind nicht Zeichen kritischen Denkens , sondern ungenauen Arbeitens .
+  - *reale Bücher* und gedruckte wissenschaftliche Publikationen aufgrund der Flüchtigkeit des Internets auch noch für einige Zeit die wissenschaftlichen Belege für Theorien und *maßgebliche* Zitate sein .
+  - Indizien für eine wissenschaftliche Arbeit Korrekte Zitierweise Ausführliche Quellenangaben Wissenschaftlichkeit in der Argumentation Wissenschaftlich durchgeführte Empirie Indizien für eine niveauvolle wissenschaftliche Arbeit Anerkannter Verlag , Angabe anerkannter Quellen Vorwort ( gibt Aufschluss über die Entstehungsgeschichte , Auseinandersetzung etc . ) Geleitworte anerkannter Wissenschaftler * innen
+  - Auch *Graue Literatur* wie Broschüren , Berichte und auch bestimmte Webseiten bieten Grafiken und Abbildungen , die Sie zu Illustrationszwecken verwenden können .
+### Forschungsmethoden
+- Kompetenz in der Anwendung von *Forschungsmethoden* erworben haben . Zu den gängigsten Methoden zählen : 
+  - Beobachtung 
+    - Bei der Feldbeobachtung ( Feldforschung ) integriert sich die Forscherin in das soziale Leben des untersuchten Systems , beobachtet und miterlebt dabei die Verhaltensmuster und versucht , die unausgesprochenen Gesetze und Regeln des Zusammenlebens zu ergründen
+    - Beobachtungen bieten sich vor allem dann an , wenn vermutet werden kann , dass die verbale Selbstdarstellung nicht mit dem tatsächlichen Verhalten übereinstimmt .
+  - Befragung 
+    - Die Befragung wird in der Regel mit standardisiertem Fragebogen durchgeführt , die Fragen und Antwortmöglichkeiten sind dabei vorgegeben .
+    - Die Online - Befragung ist eine kostengünstige Variante ,
+    - Fragebogenhilfe im Buch
+  - Interview 
+    - Durch Interviews von Einzelpersonen oder Gruppen
+  - Experiment 
+  - Inhaltsanalyse 
+  - Diskursanalyse
+  - Erkundende oder explorative Untersuchungen
+  - Im Verlaufe einer Aktionsforschung werden zusammen mit Betroffenen die Problemstellungen formuliert .
