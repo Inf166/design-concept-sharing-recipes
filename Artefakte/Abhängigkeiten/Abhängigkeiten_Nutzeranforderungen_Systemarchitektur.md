@@ -39,6 +39,7 @@
     - Als Nutzer möchte man die Möglichkeit haben, häufig genutzte Zutaten bei dem Erstellen eines Rezepts vorgeschlagen zu bekommen, um bequemer Rezepte erstellen zu können.
     - Als Nutzer möchte man die Möglichkeit haben, Rezepte zu Sammlungen für bestimmte Anlässe anzulegen, beispielsweise Weihnachten, um schnelleren Zugriff zu gewähren.
     - Als Nutzer möchte man die Möglichkeit haben, zu einem Rezept auch Vorschläge für passende Rezepte anzulegen, um Empfehlungen für Nachkochende anzulegen. 
+    - Als Nutzer möchte man die Möglichkeit haben, vor den Teilen eines Rezept, dieses nocheinmal an die Vorlieben des Empfängers anpassen zu können, um auf die Vorlieben besser einzugehen.
 
 - Zutaten
     - Als Nutzer möchte man die Möglichkeit haben, korrekte und wichtige Nährstoffangaben zu erhalten, um akkurat über die Nährstoffzufuhr unterrichtet zu werden.*
@@ -49,6 +50,7 @@
     - Als Nutzer möchte man die Möglichkeit haben, alle häufig genutzten Zutaten in einer Liste betrachten zu können, um sie gegebenenfalls zu der eigenen Voratskammer hinzuzufügen.* 
     - Als Nutzer möchte man die Möglichkeit haben, einzelne Zutaten direkt bestellen zu können, um den Einkauf für ein Mahl zu erleichtern.*
     - Als Nutzer möchte man die Möglichkeit haben, die Herkunft einer Zutat, zum Beispiel besondere Läden oder Orte, anzugeben, um den Einkauf zu erleichtern.
+    - Als Nutzer möchte man die Möglichkeit haben, sich auf Grund von den eigenen Vorlieben, Vorschläge aus den Rezepten der anderen Nutzer zu erhalten, um neue Rezepte zu entdecken.
 
 - Benachrichtigungen
     - Als Nutzer möchte man die Möglichkeit haben, zu erfahren, wenn das eingestellte Rezept von einem Mitnutzer gekocht oder markiert wird, um motiviert weitere Rezepte einzustellen zu können.*

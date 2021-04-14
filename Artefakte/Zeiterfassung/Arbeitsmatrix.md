@@ -16,4 +16,6 @@
 | 4        | Domaenenanalyse    | [TASK]    | Abhaengigkeiten        | Zitate gepflegt                | 13.04.21        | 01.05.21            |                 | 0,25            |
 | 4        | Domaenenanalyse    | [TASK]    | Abhaengigkeiten        | Weitere Nutzeranforderungen    | 13.04.21        | 01.05.21            |                 | 1,00            |
 | 4        | Domaenenanalyse    | [TASK]    | Abhaengigkeiten        | Abhaengigkeiten                | 13.04.21        | 01.05.21            |                 | 0,75            |
-|          | Stunden insgesamt  | 20,5      | Stunden Seminar        | 3,75                           | Stunden Projekt | 16,75               |
+| 10       | User Story Mapping | [TASK]    | User Stories (mapping) | Mitschrift vom Buch            | 13.04.21        | 22.05.21            |                 | 0,75            |
+| 10       | User Story Mapping | [TASK]    | User Stories (mapping) | Domainen Experten rekrutieren  | 14.04.21        | 22.05.21            |                 | 0,75            |
+|          | Stunden insgesamt  | 22        | Stunden Seminar        | 3,75                           | Stunden Projekt | 18,25               |
