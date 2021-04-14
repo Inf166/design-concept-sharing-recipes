@@ -8,7 +8,7 @@
     - Als Nutzer möchte man die Möglichkeit haben, das zu Beginn der Nutzung einem selbst die Funktionsweise erleutert wird, um die Nutzung nachhaltig zu erleichtern.*
     - Als Nutzer möchte man die Möglichkeit haben, Rezepte zu kommentieren, um Änderungen oder persönliche Anekdoten beizufügen.*
     - Als Nutzer möchte man die Möglichkeit haben, extern erstellte Rezepte einfach und bequem zu importieren, um den Aufwand des Anlegens einer Sammlung zu erleichtern.*
-    - Als Nutzer möchte man die Möglichkeit haben, einen Dietplan mit den zur Verfügung stehenenden Rezepten zu erstellen, um die eigene Ernährung zu optimieren.
+    - Als Nutzer möchte man die Möglichkeit haben, einen Diätplan mit den zur Verfügung stehenenden Rezepten zu erstellen, um die eigene Ernährung zu optimieren.
     - Als Nutzer möchte man die Möglichkeit haben, einen Kochplan mit den zur Verfügung stehenenden Rezepten zu erstellen, um die Versorgung des eigenen Haushalts so bequem wie möglich zu gestalten.*
     - Als Nutzer möchte man die Möglichkeit haben, durch einen Kochplan auch eine Einkaufsliste zu erhalten, um den Einkauf zu erleichtern.*
       - Als Nutzer möchte man die Möglichkeit haben, die Einkaufsliste auch seperat zu dem Kochplan zu erstellen, um den Einkauf zu erleichtern.
