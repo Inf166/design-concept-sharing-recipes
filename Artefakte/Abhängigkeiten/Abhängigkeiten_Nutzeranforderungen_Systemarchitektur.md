@@ -3,7 +3,7 @@
 ## Nutzer Erfordernisse oder Erwartungen
 ### Erwartungen (NOT NOW)
 - Nutzererfahrung
-    - Als Nutzer möchte man die Möglichkeit haben, ein intuitiv/ergonomisch bedienbares System zu haben, um die Rezepte problemlos übertragen zu können.*
+    - Als Nutzer möchte man die Möglichkeit haben, ein intuitiv/ergonomisch verwendbares System zu haben, um die Rezepte problemlos übertragen(von wo zu wo?) zu können.*
     - Als Nutzer möchte man die Möglichkeit haben, simple und doch sichere Wege der Registrierung wählen zu können, um den Einstieg zu erleichtern.*
     - Als Nutzer möchte man die Möglichkeit haben, das zu Beginn der Nutzung einem selbst die Funktionsweise erleutert wird, um die Nutzung nachhaltig zu erleichtern.*
     - Als Nutzer möchte man die Möglichkeit haben, Rezepte zu kommentieren, um Änderungen oder persönliche Anekdoten beizufügen.*
