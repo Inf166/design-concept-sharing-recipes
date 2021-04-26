@@ -28,4 +28,6 @@
 | 13       | Domaenenanalyse    | [SEMINAR] | Themenfeldanalyse           | Themenfeldanalyse                     | 20.04.21        | 01.05.21            | 1,25            |                 |
 | 10       | User Story Mapping | [TASK]    | User Stories (mapping)      | Domainen Experten rekrutieren         | 23.04.21        | 01.05.21            |                 | 3,00            |
 | 10       | User Story Mapping | [TASK]    | User Stories (mapping)      | Moderation und Miro board vorbereiten | 23.04.21        | 01.05.21            |                 | 2,00            |
-|          | Stunden insgesamt  | 45,25     | Stunden Seminar             | 9                                     | Stunden Projekt | 36,25               |
+| 10       | User Story Mapping | [FEATURE] | User Stories (mapping)      | User Stories mit Freiwilligen         | 25.04.21        | 01.05.21            |                 | 2,75            |
+| 10       | User Story Mapping | [FEATURE] | User Stories (mapping)      | User Stories erweitern                | 26.04.21        | 01.05.21            |                 | 4,00            |
+|          | Stunden insgesamt  | 52        | Stunden Seminar             | 9                                     | Stunden Projekt | 43                  |
