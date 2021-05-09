@@ -55,25 +55,32 @@ Hier werden die Datenbank Operationen durchgeführt und die Benachrichtigungen f
 ### Recipies Module
 
 #### Event Processing Logic
+Alle Änderungen sowie Archivierungen, Löschungen und Erstellungen von Rezepten werden hier eingereit und Stück für Stück an die Manager Module oder Publisher Module weitergegeben.
 
 #### Recipe Manager Module
+Alle Transaktionen mit der Rezept-Datenbank werden hier durchgeführt.
 
 #### Recipe Publisher Module
+Hier werden die berechtigten Nutzer über die Publizierungen oder Änderungen von Rezepten benachrichtigt.
 
 --- 
 
 ### Notifications Module
 
 #### Event Processing Logic
+Alle ausgehenden Nachrichten werden hier eingereit und Nachricht für Nachricht an die entsprechenden Module weiter gereicht.
 
 #### Push Notification Module
+Es wird der entsprechenende Push Notification Services weitergegeben.
 
 #### Email Notification Module
-
+Es wird der entsprechenende Mailservices weitergegeben.
 --- 
 
 ### Recommendations Module
 
 #### Recommendation Generator Module
+Auf den Vorlieben der Nutzer wird aus den für sie zugänglichen Rezepten Vorschläge generiert und für das Präsentations-Modul bereitgestellt.
 
 #### Preferences Manager Module
+Bei dem Erstellen, Speichern oder Kochen von Rezepten werden die Vorlieben der vornehmenden Nutzer angepasst und die Transaktionen durchgeführt.
