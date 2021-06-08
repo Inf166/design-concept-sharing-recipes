@@ -1,0 +1,118 @@
+\chapter{Zusammenfassungen von Joel}
+\label{cha:joel}
+
+\section{Optionen} \label{sec:options}
+    Einrückungen entfernen
+    \texttt{ \textbackslash setlength\{parindent\}\{0pt\} } 
+    \setlength{parindent}{0pt}
+
+\section{Anführungszeichen} \label{sec:marks}    
+    \texttt{ \textbackslash enquote\{Text\} } \\
+    \enquote{Text} \\
+    
+    \texttt{ \textbackslash glqq Text \textbackslash grqq } \\
+    \glqq Text \grqq \\
+
+\section{Zitieren} \label{sec:quotes}
+    \texttt{ \textbackslash cite\{Dix04\} } \\
+    Gibt nur den Autornamen und Jahr in Klammern aus \\
+    \cite{Dix04} \\
+
+    \texttt{ \textbackslash cite[S. 86]\{Dix04\} } \\
+    Zitat komplett in Klammern mit Komma getrennt \\
+    \cite[S. 86]{Dix04} \\
+    
+    \texttt{ \textbackslash citep\{Dix04\} } \\
+    Klammern um Autorname und Jahr \\
+    \citep{Dix04} \\
+
+    \texttt{ \textbackslash citep[S. 86]\{Dix04\} } \\
+    Zitat mit Klammer außen rum: \\
+    \citep[S. 86]{Dix04} \\
+ 
+    \texttt{ \textbackslash citet\{Dix04\} } \\
+    Gibt nur den Autornamen und Jahr in Klammern aus \\
+    \citet{Dix04} \\
+
+    \texttt{ \textbackslash citet[S. 86]\{Dix04\} } \\
+    Zitat mit Klammern um [] plus Jahr, aber Autor ohne Klammern \\
+    \citet[S. 86]{Dix04} \\
+
+    \texttt{ \textbackslash citeauthor\{Dix04\} } \\
+    Gibt nur den Namen ohne Klammern und so weiter \\
+    \citeauthor{Dix04} \\
+    
+    \texttt{ \textbackslash citep[vgl.][Seite 1]\{Dix04\} } \\
+    Liefert erste eckige Klammer plus Namen mit Komma separierten Jahr und zweiter eckiger Klammer. Alles in Klammern. \\
+    \citep[vgl.][Seite 1]{Dix04} \\
+
+\section{Fußnote} \label{sec:notes}
+    \texttt{ \textbackslash footnote\{ American Psychological Association (APA) \} } \\
+    \footnote{ American Psychological Association (APA) }
+
+\section{Referenzieren} \label{sec:refs}
+    \texttt{ \textbackslash ref\{ sec:refs \} } \\
+    Liefert die Sprungmarke mit Nummer des Chapters, Section oder Figure ...
+    \ref{sec:refs}
+
+    \texttt{ \textbackslash pageref\{ sec:refs \} } \\
+    Liefert die Sprungmarke mit Seitenzahl
+    \pageref{sec:marks}
+
+\section{Formatierung} \label{sec:format}
+    \texttt{ \textbackslash emph\{ Text hier \} } \\
+    Kursiv \\
+    \emph{Pellentesque habitant morbi tristique senectus} \\
+
+    \texttt{ 
+    \textbackslash begin\{ quotation \}
+        \textbackslash emph\{ Text hier \}
+    \textbackslash end\{ quotation \}
+    } \\
+    Kursiv und eingerückt \\
+    \begin{quotation}
+        \emph{Pellentesque habitant morbi tristique senectus}
+    \end{quotation} 
+
+    \texttt{ \textbackslash textbf\{ Text hier \} } \\
+    Dick gedruckt \\
+    Pellentesque habitant morbi tristique \textbf{senectus} \\
+
+    \texttt{ \textbackslash underline\{ Text hier \} } \\
+    Unterstrichen \\
+    Pellentesque habitant morbi \underline{tristique} senectus \\
+
+    \texttt{ \textbackslash textbf\{ \textbackslash textit\{ Text hier \} \} } \\
+    Kursiv und dick gedruckt \\
+    \textbf{\textit{Pellentesque}} habitant morbi tristique senectus. \\
+
+\section{Aufzählungen} \label{sec:items}
+    Hier folgen einige Beispiele für Listen. Zunächst eine nicht nummerierte Liste: 
+    \begin{itemize}
+        \item Item 1
+        \item Item 2
+        \item Item 3
+    \end{itemize}
+
+    Nun eine nummerierte Liste:
+    \begin{enumerate}
+        \item Item 1
+        \item Item 2
+        \item Item 3
+    \end{enumerate}
+
+    Man kann auch Symbole verwenden:
+    \begin{itemize}
+    \renewcommand{\labelitemi}{$\rightarrow$}
+        \item Item 1
+        \item Item 2
+        \item Item 3
+    \end{itemize}
+
+    Oder mit Überschriften
+    \begin{description}
+        \item[Titel - 1] \hfill \\ 
+            Lorem Ipsum dolores et. Itor mene toto hehls.
+        \item[Titel - 2] \hfill \\ 
+            Lorem Ipsum dolores et. Itor mene toto hehls.
+    \end{description}
