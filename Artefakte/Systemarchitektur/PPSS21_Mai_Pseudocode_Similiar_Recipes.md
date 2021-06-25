@@ -16,8 +16,8 @@ button[cookThis].isPressed() => {
 
 // Save Recipe
 button[saveThis].isPressed() => {
-   if(!MY.cookedRecipes.contains(thisRecipe)) {
-        MY.cookedRecipes.add(thisRecipe);
+   if(!MY.savedRecipes.contains(thisRecipe)) {
+        MY.savedRecipes.add(thisRecipe);
     }
 }
 
@@ -33,6 +33,8 @@ JSON cookedRecipePreferences = MY.getCookedRecipePreferences();
 // Get similar Recipes
 function getSimilarRecipes(currentRecipeMetaData, savedRecipePrefs, cookedRecipePrefs) {
     var searchForPrefsLikeThis;
+    searchForPrefsLikeThis.addWithBasicImportance(currentRecipeMetaData);
+
     comparePrefWithMeta(savedRecipePrefs, currentRecipeMetaData)
     comparePrefWithMeta(cookedRecipePrefs, currentRecipeMetaData)
     
@@ -42,7 +44,7 @@ function getSimilarRecipes(currentRecipeMetaData, savedRecipePrefs, cookedRecipe
                 if(searchForPrefsLikeThis.contains(Attribute)]) {
                     searchForPrefsLikeThis[Attribute].increaseImportance();
                 } else {
-                    searchForPrefsLikeThis.add(Attribute);
+                    // Do Nothing
                 }
             }
         }
@@ -65,7 +67,7 @@ function makeSearch (parameters, user) {
     var userRecipes = user.getRecipeIDs();
     var friendRecipes;
     for each friend in friends {
-        friendRecipes = friend.getRecipeIDs()
+        friendRecipes += friend.getRecipeIDs()
     }
 
     var allRecipeIDs = removeDuplicates(merge(friendRecipes, userRecipes));
