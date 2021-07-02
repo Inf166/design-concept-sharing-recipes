@@ -124,3 +124,24 @@ Felder für Currysoße:
 | Herkunft | Ernährungsart | Unverträglichkeit | Spezielles | Anlass | Saison | Menü | Menüart | Gerichte |
 |:--------:|:-------------:|:-----------------:|:----------:|:------:|:------:|:----:|:-------:|:--------:|
 | Deutschland | - | - | - | Party | Sommer | Hauptspeise | Mittagessen | Saucen und Dressing/Soße |
+
+
+# Filter Möglichkeiten [Art des Filters][Name der Eigenschaft][ASC DESC]
+
+- Dropdown&Select | Herkunft
+- Dropdown&Select | Ernährungsart
+- Dropdown&Select | Unverträglichkeit
+- Dropdown&Select | Spezielles
+- Dropdown&Select | Anlass
+- Dropdown&Select | Saison
+- Dropdown&Select | Menü
+- Dropdown&Select | Menüart
+- Dropdown&Select | Gerichte
+
+- Dropdown&SelectMultiple | Haushaltsgeräte
+- Dropdown&SelectMultiple | Zutaten
+- Slider | Bewertung | ASC DESC
+- Slider | Schwierigkeitsgrad | ASC DESC
+- Range | Zubereitungsdauer | ASC DESC
+- Select | Gespeichert
+- Select | Favorisiert
