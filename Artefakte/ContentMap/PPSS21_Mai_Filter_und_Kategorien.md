@@ -1,19 +1,29 @@
 # Herkunft
     - Afrika
     - Amerika
-        - Nord Amerika
-        - Süd Amerika
+        - Argentinien
+        - Brasilien
+        - Mexiko
+        - USA
     - Asien
-        - Chinesisch
-        - Japanisch
+        - China
+        - Japan
+        - Tailand
+        - Vietnam
     - Australien 
     - Europa
         - Deutschland
+            - Bayrische Küche
             - Rheinische Küche
         - England
-        - Mittelmeer
-        - Ost Europa
-# Ernährungsart
+        - Frankreich
+        - Griechenland
+        - Polen
+        - Russland
+        - Spanien
+        - Türkei
+# Ernährungsart (optional | important)
+    - Alkoholfrei
     - Carnivore
     - Flexitarier
     - Freeganer
@@ -25,7 +35,7 @@
         - Lacto-Vegetarier
         - OVO-Vegetarier
         - Puddingvegetarier
-# Unverträglichkeit
+# Unverträglichkeit (optional | important)
     - Alkohol-Intoleranz
     - Fruktoseintoleranz 
     - Glutenunverträglichkeit
@@ -33,26 +43,28 @@
     - Laktoseintoleranz 
     - Sacharoseintoleranz 
     - Sorbitintoleranz 
-# Spezielles
+# Spezielles (optional)
     - Babynahrung
     - Camping
     - Diabetiker
     - Fettarm
     - Kalorienarm
     - Resteessen
-    - Studentenfutter
 # Anlass
     - Halloween
+    - Hochzeit
+    - Geburtstag
     - Ostern
     - Party
     - Silvester
+    - Taufe
     - Weihnachten
-# Saison
+# Saison (optional)
     - Frühling
     - Sommer
     - Herbst
     - Winter
-# Menü
+# Menü (optional)
     - Beilage
     - Vorspeise
         - kalte Vorspeise
@@ -62,61 +74,48 @@
         - warme Zwischenspeise
     - Hauptspeise
     - Nachspeise 
-        - kalte Süßspeise
-        - warme Süßspeise
-# Menüart
+        - kaltes Dessert
+        - warmes Dessert
+# Menüart (optional)
     - Frühstück
     - Mittagessen
     - Abendessen
     - Zwischenmahlzeit
         - Brunch
+# Kategorie
+    - Snacks
+        - Cremes & Dips
+        - Studentenfutter
         - Brotzeit
-# Gerichte
-    - Saucen und Dressing
-        - Soße
-        - Dressing
-    - Getränk
+        - Sandwich
+    - Getränke
         - Bowle
         - Cocktail
-            - Alkoholfrei
-            - Longdrink
+        - Longdrink
         - Kaffee
         - Tee
         - Kakao
         - Likör
         - Punsch
         - Shake
-    - Aufstrich
-    - Auflauf
     - Backwaren
+        - Süß
+        - Herzhaft
         - Brot
-        - Kuchen
-        - Kekse
-        - Plätzchen
-        - Torten
-        - Quiche
-    - Sandwich
-    - Eigericht
-    - Eintopf
-    - Fischgericht
-    - Fleischgericht
-    - Früchte
-    - Gemüse
-    - Grillgericht
-    - Käsegericht
-    - Kartoffelgericht
-    - Krustentiere & Muscheln
-    - Nudelgericht
-    - Reisgericht
-    - Salate
+    - Grillen
+        - Soßen & Marinaden
+        - Spieße
+        - Burger
     - Suppen
-    - Süßspeisen
+        - Eintöpfe
+        - Creme-Suppen
+        - Brühen
+    - Salate
+    - Desserts
         - Creme
         - Konfitüre
         - Eis
-    - Pilzgericht
-
-
+    - Pastas
 
 # Datenbank-Schema:
 
@@ -162,24 +161,19 @@ Suchbegriff / Freitextsuche
 
 - Select | Nur Favorisierte
 - Select | Nur Gespeicherte
-    - Select Bewertung
-        - Range | Bewertung | ASC DESC
-            - Starts with egal
 
 - SelectMultiple | Schwierigkeitsgrad | ASC DESC
-    - Starts with egal
+    - Starts with All Selected
 - Range | Zubereitungsdauer | ASC DESC
     - Starts with egal
 
-- Dropdown&SelectMultiple | Haushaltsgeräte
-- Dropdown&SelectMultiple | Zutaten
-
-- Dropdown&Select | Gerichte
-- Dropdown&Select | Menüart
-- Dropdown&Select | Menü
-- Dropdown&Select | Saison
-- Dropdown&Select | Anlass
 - Dropdown&Select | Herkunft
-- Dropdown&Select | Spezielles
+- Dropdown&Select | Anlass
+- Dropdown&Select | Kategorie
 - Dropdown&Select | Ernährungsart
 - Dropdown&Select | Unverträglichkeit
+
+- Dropdown&Select | Spezielles
+- Dropdown&Select | Saison
+- Dropdown&Select | Menüart
+- Dropdown&Select | Menü
