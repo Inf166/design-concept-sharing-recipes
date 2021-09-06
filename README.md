@@ -4,7 +4,7 @@
 
 ## Commit Pattern:
 * [TASK]
-  * Everything that has already been set up but had to be done again
+  * Everything that has already been set up but had to be enhanced
 * [FEATURE]
   * Everything new
 * [BUGFIX]
