@@ -1,8 +1,46 @@
 
 Todo:
-  ☐ Backofeneinstellungen in Rezept einbauen
   ☐ Einstellungen Screen
   ☐ User Suche
+  
+  ☐ Login Screen
+    ☐ Benutzername/Email, Passwort
+  
+  ☐ Registrieren Screen
+    ☐ Name und Vorname, Email, Benutzername, Passwort
+  
+  ☐ Einführung in das System
+    ☐ Wie legt man Rezepte an 
+    ☐ Wie teilt man Rezepte
+    ☐ Wie sucht man 
+      ☐ Wie findet man Freunde 
+      ☐ Wie legt man Freundschaften fest 
+    ☐ Wie kommentiert man 
+    ☐ Wie editiert man Rezepte
+    ☐ Tutorial überspringen
+  
+  ☐ Hinweis bei Zutaten dass sie in der Reihenfolge angegeben werden sollen wie auch im Rezept benutzt
+    ☐ Möglichkeit die Reihenfolge zu verändern
+  
+  ☐ Rezept exportieren
+  ☐ Rezept löschen
+  ☐ Rezept eines Freundes anpassen
+    ☐ Verweis auf Original
+    ☐ Vorgänger anzeigen
+    ☐ Anzeige in Rezept
+  ☐ Rezept kochen
+    ☐ Personenzahl anpassen
+    ☐ Ergebnis als Kommentar kommentieren
+  
+  ☐ Freundschaftsanfrage ausstehend
+  ☐ Benachrichtungen Screen
+    ☐ Freundschaftsanfragen
+    ☐ Neue Rezepte
+    ☐ 1 Empfehlung pro Woche
+
+  ☐ Personenzahl in Rezept ansicht
+  ☐ Personenzahl in Rezeptbearbeiten ansicht
+  
   ☐ Kommentar Labels vereinfachen: 
     ☐ Radio Button -> Checkbox
     ☐ Kommentar Checkbox entfernen
