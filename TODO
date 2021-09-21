@@ -1,7 +1,4 @@
-
 Todo:
-  ☐ User Suche
-
   ☐ Einführung in das System
     ☐ Wie legt man Rezepte an
     ☐ Wie teilt man Rezepte
@@ -12,14 +9,7 @@ Todo:
     ☐ Wie editiert man Rezepte
     ☐ Tutorial überspringen
 
-  ☐ Hinweis bei Zutaten dass sie in der Reihenfolge angegeben werden sollen wie auch im Rezept benutzt
-    ☐ Möglichkeit die Reihenfolge zu verändern
-
-  ☐ Rezept exportieren
-  ☐ Rezept löschen
   ☐ Rezept eines Freundes anpassen
-    ☐ Verweis auf Original
-    ☐ Vorgänger anzeigen
     ☐ Anzeige in Rezept
   ☐ Rezept kochen
     ☐ Personenzahl anpassen
