@@ -1,3 +1,16 @@
 Todo:
-
-☐ Step by Step Anleitung wie bei Tinder/Stories auf Sozialen Plattformen durch Horizontales Wischen navigieren
+☐ Mobile
+    ☐ Share function to recipies straight from the overview
+☐ Tablet
+    ☐ Slightly more whitespace and bigger font size 
+    ☐ Portrait Mode -> Mobile design dynamicly scaled
+    ☐ Landscape Mode -> Extra Column -> Content?
+☐ Desktop
+    ☐ More Whitespace Bigger font size 
+    ☐ Topbar extended with bottom Navigation and Dropdown Menus 
+    ☐ New Recipe: dropdown with import shortcuts 
+    ☐ Cookbook: dropdown with settings and export shortcuts 
+    ☐ Profile: dropdown with settings and friendlist shortcuts
+    ☐ 
+☐ Additional Improvements
+    ☐ Step by Step Anleitung wie bei Stories auf Sozialen Plattformen durch Horizontales Wischen navigieren
