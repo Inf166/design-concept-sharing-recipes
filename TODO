@@ -1,10 +1,12 @@
 Todo:
 ☐ Mobile
-    ☐ Share function to recipies straight from the overview
+    ✔ Share function to recipies straight from the overview @done(21-10-20 11:46)
+        - No share option will be implemented right here - only from detail view
 ☐ Tablet
-    ☐ Slightly more whitespace and bigger font size 
-    ☐ Portrait Mode -> Mobile design dynamicly scaled
-    ☐ Landscape Mode -> Extra Column -> Content?
+    ✔ Slightly more whitespace and bigger font size @done(21-10-20 14:46)
+    ✔ Portrait Mode -> Mobile design dynamicly scaled @done(21-10-20 14:46)
+    ✔ Landscape Mode -> Extra Column -> Content? @done(21-10-20 15:46)
+        - Ads and maybe notifications
 ☐ Desktop
     ☐ More Whitespace Bigger font size 
     ☐ Topbar extended with bottom Navigation and Dropdown Menus 
