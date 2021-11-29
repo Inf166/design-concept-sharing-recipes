@@ -42,23 +42,26 @@
 
 \begin{document}
 
-\input{./chapter/titelseite}
-
+\input{./chapter/1-titelseite}
+\pagenumbering{Roman}
 \tableofcontents
+\addcontentsline{toc}{chapter}{Inhaltsverzeichnis}
 \setcounter{page}{1}
 \newpage
 
-\input{./chapter/abstract}
+\input{./chapter/2-abstract}
 \newpage
-\input{./chapter/einleitung}
+\pagenumbering{arabic}
+\input{./chapter/3-einleitung}
 \newpage
-\input{./chapter/kapitelzwei}
+\input{./chapter/4-hauptteil}
 \newpage
-\input{./chapter/kapiteldrei}
+\input{./chapter/5-abschluss}
 
-
 \newpage
-\include{./chapter/verzeichnisse}
-\include{./chapter/eid}
+\pagenumbering{Roman}
+\setcounter{page}{4}
+\include{./chapter/6-verzeichnisse}
+\include{./chapter/7-eid}
 
 \end{document}
