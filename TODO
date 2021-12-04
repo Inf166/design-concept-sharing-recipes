@@ -8,12 +8,13 @@ Todo:
     ✔ Landscape Mode -> Extra Column -> Content? @done(21-10-20 15:46)
         - Ads and maybe notifications
 ☐ Desktop
-    ☐ More Whitespace Bigger font size 
-    ☐ Topbar extended with bottom Navigation and Dropdown Menus 
-    ☐ New Recipe: dropdown with import shortcuts 
-    ☐ Cookbook: dropdown with settings and export shortcuts 
-    ☐ Profile: dropdown with settings and friendlist shortcuts
-    ☐ 
+    ✔ More Whitespace Bigger font size @done(21-11-29 14:04)
+    ✔ Topbar extended with bottom Navigation @done(21-11-29 14:04)
+
 ☐ Additional Improvements
+    ☐ Dropdown Menus in desktop navbar
+        ☐ New Recipe: dropdown with import shortcuts 
+        ☐ Cookbook: dropdown with settings and export shortcuts 
+        ☐ Profile: dropdown with settings and friendlist shortcuts
     ☐ Step by Step Anleitung wie bei Stories auf Sozialen Plattformen durch Horizontales Wischen navigieren
     ☐ Suche für die Einstellungen 
