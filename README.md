@@ -1,12 +1,12 @@
 # PPSS21Mai
 
-## [Mobile Prototype](https://www.figma.com/proto/0X6qAEbIXbhXPiSl1BfNGV/Praxisprojekt?page-id=101%3A3057&node-id=101%3A3243&viewport=1163%2C-250%2C0.4865090250968933&scaling=scale-down)
+## [Mobile Prototype](https://figma.fun/s3UhPh/view)
 
 
-## [Tablet Prototype](https://www.figma.com/proto/0X6qAEbIXbhXPiSl1BfNGV/Praxisprojekt?node-id=330%3A12689&viewport=288%2C48%2C0.09&scaling=scale-down&page-id=101%3A3057&starting-point-node-id=330%3A12689)
+## [Tablet Prototype](https://figma.fun/J30M9n)
 
 
-## [Desktop Prototype](https://www.figma.com/proto/0X6qAEbIXbhXPiSl1BfNGV/Praxisprojekt?node-id=523%3A25263&viewport=288%2C48%2C0.09&scaling=scale-down&page-id=101%3A3057&starting-point-node-id=523%3A25263)
+## [Desktop Prototype](https://www.figma.com/proto/0X6qAEbIXbhXPiSl1BfNGV/Praxisprojekt?node-id=523%3A21650&scaling=contain&page-id=101%3A3057&starting-point-node-id=523%3A25263&hide-ui=1)
 
 ## Commit Pattern:
 * [TASK]
