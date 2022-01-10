@@ -1,5 +1,5 @@
 %\documentclass[12pt]{article}
-\documentclass[BCOR=12mm,DIV11,titlepage,a4paper,oneside]{scrbook}
+\documentclass[BCOR=12mm,DIV11,titlepage,a4paper,oneside,hidelinks]{scrbook}
 \usepackage{scrhack}
 \usepackage[ngerman]{babel}
 \usepackage[utf8x]{inputenc}
@@ -9,7 +9,15 @@
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{subcaption}
 
-%fancyheadings funktioniert nicht mehr mit der KOMA Script Klasse scrbook
+% Chapter Title if no chapter is on page
+\usepackage{scrlayer-scrpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\fancyhead[EC, OC]{\textsc{\leftmark}}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\thepage}
 
 \usepackage{wrapfig}
 
@@ -39,6 +47,49 @@
 \widowpenalty = 10000 % schliesst Hurenkinder aus (keine Beleidigung, sondern wirklich ein Fachbegriff)
 
 \usepackage{lipsum}
+% Code Syntax Highlighting
+\usepackage{listings}
+\definecolor{foreground}{rgb}{.15,.16,.21} % 40 42 54
+\definecolor{background}{rgb}{.97,.97,.94} % 248 248 242
+\definecolor{keyword}{rgb}{1,.47,.77} % 255 121 198
+\definecolor{function}{rgb}{.74,.57,.98} % 189 147 249
+\definecolor{comment}{rgb}{0.38, 0.44, 0.64} % 98 114 164
+\definecolor{string}{rgb}{1, 0.72, 0.42} % 255 184 108
+
+\lstdefinelanguage{JavaScript}{
+  keywords={break, case, catch, continue, debugger, default, delete, do, else, finally, for, foreach, function, from, if, in, instanceof, new, return, switch, this, throw, try, typeof, var, void, while, with},
+  keywordstyle=\color{keyword}\bfseries,
+  ndkeywords={class, export, boolean, throw, implements, import, this, JSON, MY, merge, remove, OurServer, add, !, ++, (), =, >},
+  ndkeywordstyle=\color{function}\bfseries,
+  identifierstyle=\color{foreground},
+  sensitive=false,
+  comment=[l]{//},
+  morecomment=[l]{//},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{comment}\ttfamily,
+  stringstyle=\color{string}\ttfamily,
+  morestring=[b]',
+  morestring=[b]"
+}
+
+\lstset{
+   language=JavaScript,
+   backgroundcolor=\color{background},
+   extendedchars=true,
+   basicstyle=\footnotesize\ttfamily,
+   showstringspaces=false,
+   showspaces=false,
+   numbers=left,
+   numberstyle=\footnotesize,
+   numbersep=9pt,
+   tabsize=2,
+   breaklines=true,
+   showtabs=false,
+   captionpos=b
+}
+% Set Font of code to Courier
+\usepackage{courier}
+\lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
 
 \begin{document}
 
