@@ -1,23 +1,12 @@
 %\documentclass[12pt]{article}
-\documentclass[BCOR=12mm,DIV11,titlepage,a4paper,oneside,hidelinks]{scrbook}
+\documentclass[BCOR=12mm,DIV=11,titlepage,a4paper,oneside,hidelinks]{scrbook}
 \usepackage{scrhack}
 \usepackage[ngerman]{babel}
 \usepackage[utf8x]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{caption}
-\usepackage[colorinlistoftodos]{todonotes}
 \usepackage{subcaption}
-
-% Chapter Title if no chapter is on page
-\usepackage{scrlayer-scrpage}
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
-\fancyhead[EC, OC]{\textsc{\leftmark}}
-\renewcommand{\headrulewidth}{0pt}
-\fancyfoot[C]{\thepage}
 
 \usepackage{wrapfig}
 
@@ -50,7 +39,7 @@
 % Code Syntax Highlighting
 \usepackage{listings}
 \definecolor{foreground}{rgb}{.15,.16,.21} % 40 42 54
-\definecolor{background}{rgb}{.97,.97,.94} % 248 248 242
+\definecolor{background}{rgb}{1,1,1} % 248 248 242
 \definecolor{keyword}{rgb}{1,.47,.77} % 255 121 198
 \definecolor{function}{rgb}{.74,.57,.98} % 189 147 249
 \definecolor{comment}{rgb}{0.38, 0.44, 0.64} % 98 114 164
@@ -91,6 +80,43 @@
 \usepackage{courier}
 \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
 
+% Pseudo Code Verzeichnis
+\renewcommand{\lstlistlistingname}{Pseudocodeverzeichnis}
+\renewcommand{\lstlistingname}{Pseudocodeverzeichnis}
+
+% Get current month
+\newcommand{\Monat}{%
+\ifcase\month
+ Monat 0 \or Januar \or Februar \or März  \or April \or Mai \or Juni \or Juli%
+ \or August \or September \or Oktober \or November \or Dezember
+\fi}
+
+% make tables next to wrap figures
+\usepackage[%
+  margin=0.75in,%s
+  top=25mm,
+  headsep=24pt,% remove space between header and text body
+  headheight=25pt,% suggested by fancyhdr
+  footskip=24pt,%
+  bottom=25mm,
+  % showframe
+]{geometry}
+
+% hebt automatisches einrücken am Anfang der Zeile auf.
+\usepackage{lipsum}
+\setlength{\parindent}{0pt} 
+
+% Chapter Title if no chapter is on page
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyhead[C]{\textsc{\leftmark}}
+\fancyfoot[C]{\thepage}
+
 \begin{document}
 
 \input{./chapter/1-titelseite}
@@ -108,11 +134,13 @@
 \input{./chapter/4-hauptteil}
 \newpage
 \input{./chapter/5-abschluss}
+\newpage
+\input{./chapter/6-ausblick}
 
 \newpage
 \pagenumbering{Roman}
 \setcounter{page}{4}
-\include{./chapter/6-verzeichnisse}
-\include{./chapter/7-eid}
+\include{./chapter/7-verzeichnisse}
+\include{./chapter/8-eid}
 
 \end{document}

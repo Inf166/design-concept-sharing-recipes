@@ -1,0 +1,44 @@
+\chapter{Ausblick}
+\label{cha:Ausblick}
+% Ergebnisse in die Zukunft projizieren, bevorstehende Entwicklungen skizzieren, Auswirkungen der Ergebnisse auf die Praxis (vgl. Stickel-Wolf & Wolf 2013: 208)
+
+\subsubsection{Disclaimer}
+% Die Auswahl der Frameworks und die Gestaltungslösung ist nur eine Momentaufnahme basierend auf den schnell sich anpassenden Anforderungen an solche Systeme
+Da sich die Anforderungen an Webseiten, Soziale Netzwerke und Applikationen stetig ändern, ist die Auswahl und die Erarbeitung der Gestaltungslösung und Frameworks nur eine Momentaufnahme dessen, was die Nutzer gemeinsam entwickelt haben. Kommende Entwickler müssen sehr wahrscheinlich von vorne beginnen, um alle Anforderungen an Systeme wie dieses nutzerzentriert zu erarbeiten. Das Einbringen von Guidelines kann die Arbeit erleichtern, ergibt aber nicht immer die ergonomischte Lösung.
+
+\subsubsection{Frameworks}
+In dem folgendem Kapitel sollen die Auswahl der zu nutzenden Frameworks diskutiert werden, jedoch sind die genannten Frameworks nur ein Ausschnitt der im \href{https://github.com/Inf166/PPSS21Mai/wiki/M\%C3\%B6gliche-Technologien}{Github Repository} diskutierten Produkte, die im Netz verfügbar sind.
+% Vue Native - PWA für full support
+Für das Frontend gibt es eine Reihe an \href{https://www.simicart.com/blog/pwa-frameworks/}{Javascript Frameworks}, die das Implementieren von PWA Funktionalitäten als auch den Export zu einer Nativen App erleichtern \citep[{``there just are too many different PWA frameworks out there, each with its own unique perks for you to choose from''}]{Selected74:online}. \\
+
+Besonders bekannt sind dabei Vue und React Native \citep{schiel-2022}. Beide bieten ähnliche Funktionalitäten. Weil ich mehr Erfahrung mit Vue habe, wähle ich Vue Native. \\
+Diese Wahl basiert auf persönlichen Präferenzen und der schnell erlernbaren Syntax und Semantik von Vue sowie die Erfahrung die ich mit Vue habe. Dieses Vorgehen der Auswahl eines Javascript Frameworks ist die empfohlene Vorgehensweise unter Entwicklern \citep[{``your team’s experience can be a deciding factor when choosing a new technology''}]{Angularv54:online}. \\
+
+% React Native / PWA als Alternative
+% NoSQL vs SQL
+Ob die Datenbank nach SQL oder dem NoSQL Schema aufgebaut sein soll, lässt sich nicht hundertprozentig beantworten. Jedoch als {``Best Practice''} gilt die Skalierbarkeit von Systemen und somit auch die Datenbanken, was sich am besten mit NoSQL realisieren lässt. Jedoch sind SQL Datenbanken besonders geeignet für die Dartstellung von Relationen, welche in diesem System besonders häufig vertreten sind. Das erwartete Wachstum des Systems und die damit steigenden Abfragen an das System, sowie die Implementierung von Empfehlungsalgorithmen, sprechen wieder für eine NoSQL Datenbank. Hier stehen verschiedene Frameworks zur Verfügung. Zur Nutzung des lokalen Speichers werden meist Google Bibliotheken genutzt, welche einen an dessen Produkte binden würden.
+% ### SQL
+%- Vorteile: 
+%    - Geeignet für Sozial Media Applications
+%        - Geeignet für die Darstellungen von Beziehungen
+%    - Geeignet für Finanzsystem
+%- Nachteile:
+%    - Große Abfragen brauchen länger
+%### NoSQL
+%- Vorteile: 
+%    - Geeignet bei vielen Lese/Schreibe Operationen
+%    - Geeignet wenn schnelle Skalierung erforderlich ist
+%    - Geeignet wenn viele Daten versendet/empfangen werden
+%    - Geeignet für dynmaische Inhalte
+%- Nachteile:
+%    - Komplexeres Setup
+
+\subsubsection{Mögliche Folgeprojekte}
+% Peer to Peer lösung mit Lokalem oder Cloud Speicher einzelner Nutzer
+Sofern technisch möglich, ist die Umsetzung eines ähnlichen Systems, auf Basis von Peer to Peer Kommunikation zwischen Client und Server als auch den anderen Endgeräten von Nutzern, ein geeignetes Folgeprojekt. Die sich daraus resultierenden Synchronisationsprobleme könnten mitmilfe von Blockchain oder öffentlichen Frameworks für den lokalen Speicher lösen lassen. Die aktuellen Limitierungen des lokalen Speichers machen dieses Projekt jedoch zurzeit nur eingeschränkt möglich. \\
+
+% Framework bauen für eine Peer to Peer Lösung
+Ein weiteres, fortschrittliches Projekt wäre die Umsetzung eines Frameworks/Stacks für soziale Netzwerke, unabhängig von großen Unternehmen und komplett Open-Source. Dabei müssen die genutzten Technologien ständig von der Community evaluiert werden, das Ergebnis wäre jedoch die Anreicherung des Marktes von Sozialen Netzwerken mit vielen neuen Produkten, die sich nicht direkt an große Unternehmen binden und deren Position stärken. \\
+
+% Stack Image für easy set up
+Ein Folgeprojekt dafür wäre die Etablierung eines solchen Stacks als Image, welches sich mithilfe von Virtualisierungsprogrammen wie Docker schnell selber aufsetzen lässt und somit die Einstiegshürde für junge Entwickler sinkt.

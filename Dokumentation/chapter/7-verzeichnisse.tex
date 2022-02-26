@@ -1,0 +1,190 @@
+%Erzeugt ein Abbildungsverzeichnis
+\listoffigures
+%Fügt die Zeile "`Abbildungsverzeichnis"' als Chapter ins Inhaltsverzeichnis ein
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+\newpage
+	
+%Erzeugt ein Tabellenverzeichnis
+%\listoftables
+%Fügt die Zeile "`Tabellenverzeichnis"' als Chapter ins Inhaltsverzeichnis ein
+%\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+%\newpage
+
+%Erzeugt ein Pseudocode
+\lstlistoflistings
+%Fügt die Zeile "`Pseudocode"' als Chapter ins Inhaltsverzeichnis ein
+\addcontentsline{toc}{chapter}{Pseudocodeverzeichnis}
+\newpage
+\begin{lstlisting}[caption=Pseudocode - Ähnliche Rezepte,label={lst:SimilarRecipies}]
+// Mark Recipe as cooked
+if (thisRecipe.isOpen() > 300000) { // Opened for longer than 5 minutes
+    if(!MY.cookedRecipes.contains(thisRecipe)) { 
+        MY.cookedRecipes.add(thisRecipe);
+    }
+}
+
+button[cookThis].isPressed() => {
+   if(!MY.cookedRecipes.contains(thisRecipe)) {
+        MY.cookedRecipes.add(thisRecipe);
+    }
+}
+
+// Save Recipe
+button[saveThis].isPressed() => {
+   if(!MY.savedRecipes.contains(thisRecipe)) {
+        MY.savedRecipes.add(thisRecipe);
+    }
+}
+
+// Get MetaData from this Recipe
+JSON thisRecipeMetaData = thisRecipe.getMetaData();
+
+// Get Saved Recipe Preferences
+JSON savedRecipePreferences = MY.getSavedRecipePreferences();
+
+// Get Cooked Recipe Preferences
+JSON cookedRecipePreferences = MY.getCookedRecipePreferences();
+
+// Get similar Recipes
+function getSimilarRecipes(currentRecipeMetaData, savedRecipePrefs, cookedRecipePrefs) {
+    var searchForPrefsLikeThis;
+    searchForPrefsLikeThis.addWithBasicImportance(currentRecipeMetaData);
+
+    comparePrefWithMeta(savedRecipePrefs, currentRecipeMetaData)
+    comparePrefWithMeta(cookedRecipePrefs, currentRecipeMetaData)
+    
+    function comparePrefWithMeta(prefs, meta) {
+        for each Attribute in Pref {
+            if meta[Attribute] == Pref[Attribute] {
+                if(searchForPrefsLikeThis.contains(Attribute)]) {
+                    searchForPrefsLikeThis[Attribute].increaseImportance();
+                } else {
+                    // Do Nothing
+                }
+            }
+        }
+    }
+
+    var similareRecipes = OurServer.makeSearch(searchForPrefsLikeThis);
+
+    return similarRecipes
+}
+
+// Make Search on our Server Side
+function makeSearch (parameters, user) {
+    var result;
+
+    var params = parameters;
+
+    var user = user;
+    var friends = user.getFriendIDs();
+    
+    var userRecipes = user.getRecipeIDs();
+    var friendRecipes;
+    for each friend in friends {
+        friendRecipes += friend.getRecipeIDs()
+    }
+
+    var allRecipeIDs = removeDuplicates(merge(friendRecipes, userRecipes));
+
+    for each recipe in allRecipeIDs {
+        var compareResult = recipe.compareWithParams(params);
+
+        if(compareResult > 0.5) {
+            result.add(recipe, compareResult)
+        }
+    }
+
+    function compareWithParams (params) {
+        var recipedata = this.getMetaData();
+        var compareResult = 0;
+        var attributesLength = recipedata.countAttributes();
+        var score = 0;
+
+        foreach Attribute in recipedata {
+            if recipedata[Attribute] == params[Attribute] {
+                score++;
+                if(params[Attribute].importance > 3) {
+                    score++;
+                }
+            }
+        }
+
+        compareResult = score / attributesLength;
+        return (double) compareResult;
+    }
+
+    result.sortBy(compareResult);               
+    //Sort all results by their rating
+    result.stripAllButFiveStartingAtFirst();    
+    //Remove all but the 5 first in List
+
+    return result;
+}
+\end{lstlisting}
+\newpage
+\begin{lstlisting}[caption=Pseudocode - Empfehlungen,label={lst:Recommendations}]
+// Get Local Time
+import Date from Libary;
+
+function getLocalTime() {
+    return Date.currentTime();
+}
+
+// Get Menu Based On Time
+function getMenuBasedOnTime(localTime) {
+    allMenus = OurServer.getAllMenus();
+
+    foreach (allMenus as menu) {
+        if (!isContainedIn(menu.typicalTimeRange, localTime)){
+            allMenus.remove(menu);
+        }
+    }
+} 
+/* Probably easier to just return the prefered menu by the server time. We will do that, but for the sake of explaining the code, we stick with this */
+
+// Get Season Based On Time
+function getSeasonBasedOnTime(localTime) {
+    allSeasons = OurServer.getAllSeasons();
+
+    foreach (allSeasons as season) {
+        if (!isContainedIn(season.typicalTimeRange, localTime)){
+            allMenus.remove(season);
+        }
+    }
+} 
+/* Probably easier to just return the prefered season by the server time. We will do that, but for the sake of explaining the code, we stick with this */
+
+// Get Saved Recipe Preferences
+JSON savedRecipePreferences = MY.getSavedRecipePreferences();
+
+// Get Cooked Recipe Preferences
+JSON cookedRecipePreferences = MY.getCookedRecipePreferences();
+
+// Get Recommendations
+function getRecommendations(allMenus, allSeasons, savedRecipePreferences, cookedRecipePreferences) {
+    var preferences = merge(savedRecipePreferences, cookedRecipePreferences);
+    preferences.removeAllMenusBut(allMenus);
+    preferences.removeAllSeasonsBut(allSeasons);
+    preferences.boostImportanceOfSeasonAndMenu(); 
+    //Increases Importance of Seasons and Menus so the search will likely deliver more fitting recipes
+
+    var recommendations = OurServer.makeSearch(preferences); 
+    //See at PseudoCode Similiar Recipes
+
+    return recommendations;
+}
+\end{lstlisting}
+\newpage
+
+% To change the title from References to Bibliography:
+\renewcommand\refname{Literaturverzeichnis}
+
+%Paket für ein deutsches Literaturverzeichnis
+
+\bibliographystyle{natdin} % or try natplain or unsrtnat
+\bibliography{literatur} % refers to literatur.bib
+
+	%Fügt die Zeile "`Literaturverzeichnis"' als Chapter ins Inhaltsverzeichnis ein
+	\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+\newpage
