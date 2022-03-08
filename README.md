@@ -1,4 +1,4 @@
-# PPSS21Mai
+# Praxisprojekt Sommersemester 2021 Mai
 
 ## [Mobile Prototype](https://figma.fun/s3UhPh/view)
 
