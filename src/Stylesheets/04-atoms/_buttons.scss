@@ -1,15 +1,57 @@
-// Buttons
 $atom: 'btn';
 
 // Atom
 $btn-padding-x-y:       1rem 2rem;
-$btn-border-width:	    0.1rem;
-$btn-border-radius:	    0.1rem;
-$btn-focus-box-shadow:  none;
+
 $btn-disabled-opacity:  .65;
+$btn-focus-box-shadow:  none;
 $btn-active-box-shadow: none;
+
+$btn-font-family:		    $font-family-sans-serif;
+$btn-font-size:			    $font-size-base * 2.4;
+$btn-font-weight:		    $font-weight-base;
 $btn-text-decoration:   none;
-$btn-font-family:		$font-family-sans-serif;
-$btn-font-weight:		$font-weight-base;
-$btn-font-size:			$font-size-base * 1.125;
 $btn-line-height:       $line-height-base * 1.25;
+
+$btn-border-radius:	    1.5rem;
+$btn-border-width:	    0.6rem;
+// Buttons
+button,.#{$atom} {
+  padding: $btn-padding-x-y;
+  margin: 1.2rem;
+
+  color: $black;
+  background-color: $white;
+
+  font-family: $btn-font-family;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  text-decoration: $btn-text-decoration;
+  line-height: $btn-line-height;
+
+  border-radius: $btn-border-radius;
+  border-width: $btn-border-width;
+  border-color: $white;
+}
+
+button.disabled,.#{$atom}.disabled {
+  opacity: $btn-disabled-opacity;
+}
+
+.btn--primary {
+  background-color: $primary;
+  border-color: $primary;
+  color: $white;
+}
+
+.btn--secondary {
+  background-color: $white;
+  border-color: $white;
+  color: $success;
+}
+
+.btn--tertiary {
+  background-color: transparent;
+  border-color: $primary;
+  color: $primary;
+}
