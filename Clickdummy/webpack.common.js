@@ -61,6 +61,14 @@ module.exports = {
       filename: 'index.html',
       template: path.resolve(__dirname, './src/Snippets/04-templates/index.hbs')
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: path.resolve(__dirname, './src/Fonts'), to: 'Fonts' },
+        { from: path.resolve(__dirname, './src/Icons'), to: 'Icons' },
+        { from: path.resolve(__dirname, './src/Images'), to: 'Images' },
+        { from: path.resolve(__dirname, './src/Json'), to: 'Json' }
+      ]
+    }),
     new MiniCssExtractPlugin({
       filename: 'Stylesheets/[name].css',
       chunkFilename: '[name].css'
