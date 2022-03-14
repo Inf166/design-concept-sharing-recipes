@@ -10,6 +10,7 @@ const HandlebarsPlugin = require("handlebars-webpack-plugin");
 
 module.exports = {
   entry: {
+    'service-worker': "./src/JavaScripts/01-generic/service-worker.js",
     default: [
       path.resolve(__dirname, './src/JavaScripts/index.js'),
       path.resolve(__dirname, './src/Stylesheets/default.scss')

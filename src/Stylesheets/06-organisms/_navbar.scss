@@ -1,0 +1,70 @@
+$organism: 'navbar';
+
+// Navigation
+.#{$organism} {
+  padding: 0;
+
+  .logo {
+    text-decoration: none;
+    display: flex;
+    background-color: $primary;
+    flex-direction: row;
+    justify-content: left;
+    color: $white;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: $font-weight-medium;
+    width: 100%;
+    padding: 1.2rem;
+
+    svg {
+      width: 6rem;
+      height: 6rem;
+      margin-right: 1.2rem;
+    }
+  }
+
+  nav {
+    background-color: $primary;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 2.2rem;
+
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+
+      li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        opacity: 0.45;
+
+        svg {
+          width: 4.5rem;
+          height: 4.5rem;
+          margin-bottom: 0.8rem;
+
+          .icon--primary {
+            stroke: $white;
+          }
+        }
+        span {
+          color: $white;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          font-weight: $font-weight-medium;
+        }
+      }
+
+      li a.active {
+        opacity: 1;
+      }
+    }
+  }
+}
