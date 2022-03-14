@@ -38,7 +38,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-                url: false
+              url: false,
             }
           },
           {
@@ -71,8 +71,8 @@ module.exports = {
       ]
     }),
     new MiniCssExtractPlugin({
-      filename: 'Stylesheets/[name].css',
-      chunkFilename: '[name].css'
+      filename: 'Stylesheets/[name].[hash].css',
+      chunkFilename: '[name].[hash].css'
     })
   ]
 }

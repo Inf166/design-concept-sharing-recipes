@@ -13,6 +13,6 @@ module.exports = merge(common, {
     publicPath: "/design-concept-sharing-recipies/"
   },
   plugins: [
-       new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(),
   ]
 });

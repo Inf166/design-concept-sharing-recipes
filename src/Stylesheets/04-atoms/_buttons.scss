@@ -44,6 +44,13 @@ button,.#{$atom} + button,.#{$atom} {
   margin-right: $grid-margin-left-right--mobile / 2;
 }
 
+.#{$atom}-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem 0.5rem;
+}
+
 // Modifiers
 .#{$atom}--primary {
   background-color: $primary;
