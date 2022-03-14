@@ -23,7 +23,9 @@
     "url": "https://github.com/Inf166/design-concept-sharing-recipies/issues"
   },
   "homepage": "https://github.com/Inf166/design-concept-sharing-recipies#readme",
-  "dependencies": {},
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "bootstrap": "^5.1.3",
