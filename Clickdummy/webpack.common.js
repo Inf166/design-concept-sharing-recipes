@@ -9,16 +9,11 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HandlebarsPlugin = require("handlebars-webpack-plugin");
 
 module.exports = {
-  mode: "development",
   entry: {
     default: [
       path.resolve(__dirname, './src/JavaScripts/index.js'),
       path.resolve(__dirname, './src/Stylesheets/default.scss')
     ]
-  },
-  output: {
-    filename: "main-[hash].js",
-    path: path.resolve(__dirname, "dist/JavaScripts")
   },
   module: {
     rules: [
@@ -63,11 +58,11 @@ module.exports = {
       }
     }),
     new HtmlWebPackPlugin({
-      filename: '../index.html',
+      filename: 'index.html',
       template: path.resolve(__dirname, './src/Snippets/04-templates/index.hbs')
     }),
     new MiniCssExtractPlugin({
-      filename: '../Stylesheets/[name].css',
+      filename: 'Stylesheets/[name].css',
       chunkFilename: '[name].css'
     })
   ]

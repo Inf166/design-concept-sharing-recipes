@@ -5,7 +5,8 @@
   "description": "A clickdummy for the app desingned in this iteration",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "dev": "webpack-dev-server --config webpack.dev.js --open",
+    "prod": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -37,6 +38,7 @@
     "sass-loader": "^12.6.0",
     "webpack": "^5.70.0",
     "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
     "webpack-merge": "^5.8.0"
   }
 }
