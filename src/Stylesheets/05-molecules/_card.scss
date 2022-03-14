@@ -1,0 +1,177 @@
+$molecules: 'card';
+
+.#{$molecules} {
+  background-color: $white;
+  border-left: 18px solid $gray-200;
+  border-radius: $btn-border-radius;
+
+  .#{$molecules}__label {
+
+    span {
+      display: inline-block;
+      padding: $btn-padding-x-y;
+      margin: $btn-padding-x-y;
+      border-radius: 4rem;
+      width: auto;
+
+      color: $white;
+      background-color: $gray-200;
+      font-size: $btn-font-size;
+      font-weight: $btn-font-weight;
+    }
+  }
+
+  .#{$molecules}__teaser {
+    width: 100%;
+    position: relative;
+    text-align: left;
+    min-height: 7rem;
+
+    img {
+      width: 100%;
+    }
+    h3 {
+      position: absolute;
+      bottom: $btn-padding-x;
+      left: $btn-padding-y;
+      padding: $btn-padding-x;
+      border-radius: 1rem;
+      background-color: $gray-200;
+      color: $white;
+      font-size: 3rem;
+      font-weight: $font-weight-medium;
+    }
+  }
+
+  .#{$molecules}__meta {
+
+    ul {
+      list-style: none;
+      display: flex;
+      padding: $btn-padding-x-y;
+
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: space-between;
+
+      li {
+        padding: $btn-padding-x;
+        width: auto;
+
+        font-size: 2rem;
+
+        a {
+          text-decoration: none;
+          color: $gray-400;
+
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+
+          svg {
+            width: 2rem;
+            height: 2rem;
+            margin-right: 0.5rem;
+
+            .icon--primary {
+              stroke: $gray-400;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .#{$molecules}__author {
+    padding: $btn-padding-x-y;
+
+    h4 {
+      font-size: $btn-font-size;
+      font-weight: $btn-font-weight;
+      color: $black;
+    }
+    .author {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+
+      .author__image {
+        width: 6rem;
+        height: auto;
+        margin-right: 0.5rem;
+
+        border-radius: 6rem;
+        border: 0.4rem solid $gray-200;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+      .author__info {
+
+        span {
+          display: block;
+        }
+        .author__name {
+          font-size: $btn-font-size;
+          font-weight: $font-weight-normal;
+          color: $black;
+        }
+        .author__count-published {
+          font-size: $btn-font-size;
+          font-weight: $font-weight-normal;
+          color: $gray-300;
+        }
+      }
+    }
+  }
+}
+
+.#{$molecules} + .#{$molecules} {
+  margin-top: 3rem;
+}
+
+// Modifiers
+.recipe--recommendation {
+  border-left: 18px solid $danger;
+
+  .#{$molecules}__label {
+    span { background-color: $danger; }
+  }
+  .#{$molecules}__teaser {
+    h3 { background-color: $danger; }
+  }
+  .#{$molecules}__author {
+    .author__image { border-color: $danger; }
+  }
+}
+.recipe--new {
+  border-left: 18px solid $warning;
+
+  .#{$molecules}__label {
+    span { background-color: $warning; }
+  }
+  .#{$molecules}__teaser {
+    h3 { background-color: $warning; }
+  }
+  .#{$molecules}__author {
+    .author__image { border-color: $warning; }
+  }
+}
+.recipe--private {
+  border-left: 18px solid $success;
+
+  .#{$molecules}__label {
+    span { background-color: $success; }
+  }
+  .#{$molecules}__teaser {
+    h3 { background-color: $success; }
+  }
+  .#{$molecules}__author {
+    .author__image { border-color: $success; }
+  }
+}

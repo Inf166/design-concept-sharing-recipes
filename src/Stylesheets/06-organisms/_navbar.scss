@@ -2,6 +2,7 @@ $organism: 'navbar';
 
 // Navigation
 .#{$organism} {
+  z-index: $z-index-navbar;
   padding: 0;
 
   .logo {

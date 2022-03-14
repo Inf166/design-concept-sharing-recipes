@@ -1,7 +1,9 @@
 $atom: 'btn';
 
 // Atom
-$btn-padding-x-y:       1rem 2rem;
+$btn-padding-x:       1rem;
+$btn-padding-y:       2rem;
+$btn-padding-x-y:     $btn-padding-x $btn-padding-y;
 
 $btn-disabled-opacity:  .65;
 $btn-focus-box-shadow:  none;
@@ -15,10 +17,10 @@ $btn-line-height:       $line-height-base * 1.25;
 
 $btn-border-radius:	    1.5rem;
 $btn-border-width:	    0.6rem;
+
 // Buttons
 button,.#{$atom} {
   padding: $btn-padding-x-y;
-  margin: 1.2rem;
 
   color: $black;
   background-color: $white;
@@ -38,6 +40,11 @@ button.disabled,.#{$atom}.disabled {
   opacity: $btn-disabled-opacity;
 }
 
+button,.#{$atom} + button,.#{$atom} {
+  margin-right: $grid-margin-left-right--mobile / 2;
+}
+
+// Modifiers
 .#{$atom}--primary {
   background-color: $primary;
   border-color: $primary;
@@ -54,6 +61,12 @@ button.disabled,.#{$atom}.disabled {
   background-color: transparent;
   border-color: $primary;
   color: $primary;
+}
+
+.#{$atom}--delete {
+  background-color: $danger;
+  border-color: $danger;
+  color: $white;
 }
 
 .container--cta {
