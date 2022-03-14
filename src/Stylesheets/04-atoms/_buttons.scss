@@ -38,20 +38,30 @@ button.disabled,.#{$atom}.disabled {
   opacity: $btn-disabled-opacity;
 }
 
-.btn--primary {
+.#{$atom}--primary {
   background-color: $primary;
   border-color: $primary;
   color: $white;
 }
 
-.btn--secondary {
+.#{$atom}--secondary {
   background-color: $white;
   border-color: $white;
   color: $success;
 }
 
-.btn--tertiary {
+.#{$atom}--tertiary {
   background-color: transparent;
   border-color: $primary;
   color: $primary;
+}
+
+.container--cta {
+  width: 100%;
+  display: flex;
+
+  .#{$atom}--cta {
+    flex-grow: 1;
+    margin: $grid-margin-up-down--mobile $grid-margin-left-right--mobile;
+  }
 }

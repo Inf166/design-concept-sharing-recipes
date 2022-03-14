@@ -42,6 +42,10 @@ $container-max-widths: (
 	xxl: 87.5rem            // 1400px
 ) !default;
 
+// Grid
+$grid-margin-left-right--mobile: 3rem;
+$grid-margin-up-down--mobile: 1.2rem;
+
 // Spacings
 $spacer: 1rem;
 $spacers: () !default;

@@ -15,7 +15,7 @@ $organism: 'navbar';
     font-size: 4rem;
     font-weight: $font-weight-medium;
     width: 100%;
-    padding: 1.2rem;
+    padding: $grid-margin-up-down--mobile $grid-margin-left-right--mobile;
 
     svg {
       width: 6rem;
@@ -29,7 +29,7 @@ $organism: 'navbar';
     position: fixed;
     bottom: 0;
     width: 100%;
-    padding: 2.2rem;
+    padding: $grid-margin-up-down--mobile $grid-margin-left-right--mobile;
 
     ul {
       list-style: none;
