@@ -9,7 +9,8 @@ module.exports = merge(common, {
   mode: "production",
   output: {
     filename: "JavaScripts/main-[hash].js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
+    publicPath: "/design-concept-sharing-recipies/"
   },
   plugins: [
        new CleanWebpackPlugin(),
