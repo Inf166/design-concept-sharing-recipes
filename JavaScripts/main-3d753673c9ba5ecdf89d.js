@@ -1,1 +1,0 @@
-(()=>{"use strict";(()=>{const s=()=>{s("HELLO FROM WEBPACK!")};s()})()})();
