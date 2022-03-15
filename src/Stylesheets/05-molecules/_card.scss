@@ -1,9 +1,11 @@
 $molecules: 'card';
 
+// Cards
 .#{$molecules} {
   background-color: $white;
   border-left: 18px solid $gray-200;
   border-radius: $btn-border-radius;
+  overflow: hidden;
 
   .#{$molecules}__label {
 

@@ -34,14 +34,24 @@ button,.#{$atom} {
   border-radius: $btn-border-radius;
   border-width: $btn-border-width;
   border-color: $white;
+
+  svg {
+    width: 4rem;
+    height: 4rem;
+
+    .icon--primary {
+      stroke: $gray-300;
+    }
+  }
 }
 
 button.disabled,.#{$atom}.disabled {
   opacity: $btn-disabled-opacity;
 }
 
-button,.#{$atom} + button,.#{$atom} {
-  margin-right: $grid-margin-left-right--mobile / 2;
+button + button,
+.#{$atom} + .#{$atom} {
+  margin-left: $grid-margin-left-right--mobile / 2;
 }
 
 .#{$atom}-row {

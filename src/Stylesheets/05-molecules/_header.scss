@@ -1,0 +1,35 @@
+$molecules: 'header';
+
+// Header
+.#{$molecules}, header {
+  position: sticky;
+  top: 0;
+  z-index: $z-index-navbar;
+  background-color: $primary;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $grid-margin-up-down--mobile;
+
+  h1 {
+    font-size: 4.6rem;
+    font-weight: $font-weight-bold;
+    font-family: $font-family-sans-serif;
+    color: $white;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+
+    li {
+      padding: $grid-margin-up-down--mobile;
+
+      svg {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+  }
+}
