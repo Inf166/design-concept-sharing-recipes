@@ -65,17 +65,28 @@ $organism: 'search';
       gap: 1rem;
 
       input[type="checkbox"] {
-        width: 2.6rem;
-        height: 2.6rem;
-        -webkit-appearance: none;
-        appearance: none;
-
-        background-color: $primary;
-        border: 0.4rem solid $white;
-        border-radius: 0.4rem;
+        display: none;
       }
       input[type="checkbox"]:checked {
-        background-color: $white;
+        display: none;
+      }
+      label {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+      }
+      input[type="checkbox"] + label span {
+          display: inline-block;
+          vertical-align: middle;
+          width: 3.6rem;
+          height: 3.6rem;
+          margin-right: 0.8rem;
+          background: url(../Icons/Icon-Checkbox-Unchecked.svg) 0px center no-repeat;
+          background-size: cover;
+      }
+      input[type="checkbox"]:checked + label span {
+          background: url(../Icons/Icon-Checkbox-Checked.svg) 0px center no-repeat;
+          background-size: cover;
       }
     }
 
@@ -103,6 +114,12 @@ $organism: 'search';
       }
 
       // Styles
+      background:
+        linear-gradient(90deg, $white 0.6rem, rgba(238, 238, 238, 0) 0.5rem) repeat-x content-box,
+        linear-gradient(90deg, $white 0.6rem, rgba(238, 238, 238, 0) 0.5rem) repeat-x content-box;
+      background-size: 25% 3rem, calc(100% - 5px) 4rem;
+      background-position: 1px 50%, 0px 20%;
+
       // Thumb
       &::-webkit-slider-thumb{
         background-color: $primary;
@@ -161,7 +178,7 @@ $organism: 'search';
       padding: 0;
 
       li:not(:last-child){
-        margin-right: 3.5rem;
+        margin-right: 2.6rem;
       }
     }
 
