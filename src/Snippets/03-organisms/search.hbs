@@ -60,8 +60,40 @@
             </ul>
         </div>
         <div class="categories custom-check">
-            <input type="checkbox" id="respect-categories" name="categories">
+            <input type="checkbox" id="respect-categories" name="categories" onclick="document.getElementById('additional').classList.toggle('d-none');">
             <label for="respect-categories"><span></span>Nur bestimmte Kategorien</label>
+        </div>
+        <div id="additional" class="additional d-none">
+            <div>
+                <label for="heritage">Herkunft</label>
+                <select id="heritage" class="select" data-mdb-filter="true">
+                    <option value="de">Deutschland</option>
+                </select>
+            </div>
+            <div>
+                <label for="reason">Anlass</label>
+                <select id="reason" class="select" data-mdb-filter="true">
+                    <option value="party">Party</option>
+                </select>
+            </div>
+            <div>
+                <label for="category">Kategorie</label>
+                <select id="category" class="select" data-mdb-filter="true">
+                    <option value="barbecue">Grillen</option>
+                </select>
+            </div>
+            <div>
+                <label for="diet">Ernährungsart</label>
+                <select id="diet" class="select" data-mdb-filter="true">
+                    <option value="none">-</option>
+                </select>
+            </div>
+            <div>
+                <label for="intolerance">Unverträglichkeit</label>
+                <select id="intolerance" class="select" data-mdb-filter="true">
+                    <option value="none">-</option>
+                </select>
+            </div>
         </div>
     </div>
 </div>
