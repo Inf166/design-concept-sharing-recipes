@@ -1,0 +1,79 @@
+\chapter{Weitere Kapitel}
+\label{cha:weitere_kapitel}
+
+\section{Fußnoten und Listen} % (fold)
+\label{sec:fussnoten_listen}
+Fußnoten können zum Teil sehr nützlich sein. Bitte beachten Sie, dass bei übermäßiger Verwendung von Fußnoten, die Lesbarkeit einschränkt sein kann\footnote{ da der Lesefluss unterbrochen wird!}. 
+
+\subsection{Beispiel Unterabschnitte} % (fold)
+\label{sub:bsp_unterabschnitt}
+Sie können in \LaTeX{} Unterabschnitte verwenden. Wenn Sie allerdings einen Unterabschnitt einfügen, sollten es mindestesns zwei sein. Es ist unüblich, dass man beispielsweise nur einen Abschnitt in einem Kapitel hat, oder nur einen Unterabschnitt in einem Abschnitt. Siehe zum Beispiel folgenden Tipp von Dave Patterson: 
+
+\begin{quotation}
+	\emph{``Its strange to have a single subsection (e.g., 5.2.1 in section 5.2). Why do you need to number it if there is only one? Either eliminate the single subsection, or change the part that precedes the subsection into a second subsection''}
+	\citep{Patterson2013}
+\end{quotation} 
+
+% subsection bsp_unterabschnitt (end)
+
+
+\subsection{Listen} % (fold)
+\label{sub:listen}
+Hier folgen einige Beispiele für Listen. Zunächst eine nicht nummerierte Liste: 
+
+\begin{itemize}
+	\item Item 1
+	\item Item 2
+	\item Item 3
+\end{itemize}
+
+Nun eine nummerierte Liste:
+
+\begin{enumerate}
+	\item Item 1
+	\item Item 2
+	\item Item 3
+\end{enumerate}
+
+Man kann auch Symbole verwenden:
+
+\begin{itemize}
+\renewcommand{\labelitemi}{$\rightarrow$}
+	\item Item 1
+	\item Item 2
+	\item Item 3
+\end{itemize}
+
+\subsubsection{Beispiel für Unter-Unterabschnitt} % (fold)
+\label{ssub:bsp_unterunterabschnitt}
+Die gängige Gliederungstiefe von 3 Ebenen (Kapitel, Abschnitt, Unterabschnitt) sollte in der Regel nicht unterschritten werden. Sie können zwar eine weitere Ebene tiefer gehen, da dies ggf. die Lesbarkeit verringert wird diese in \LaTeX{} nicht automatisch im Inhaltsverzeichnis aufgeführt. Hier werden beispielhaft Unter-Unterabschnitte verwendet. 
+
+Der folgende Text ist lediglich ein Platzhalter: \emph{Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.}
+
+% subsubsection bsp_unterunterabschnitt (end)
+
+\subsubsection{Noch ein Unter-Unterabschnitt}
+Der folgende Text ist lediglich ein Platzhalter, welchen man auch automatisch mit dem Paket ``Lipsum'' generieren kann: 
+\textit{\lipsum[1]}	
+
+\paragraph{Paragraph als Alternative} % (fold)
+\label{par:paragraph_als_alternative}
+Für diesen Abschnitt wurde nicht der \texttt{subsubsection\{\}} Befehl verwendet, sondern ``paragraph'', der auch verwendet werden kann, um einen Unterabschnitt zu generieren. Verglichen zum \texttt{subsubsection\{\}} Befehl beginnt der Text hier nicht in einer neuen Zeile, sondern direkt nach der Überschrift. Wenn Ihr Dokument eher kurz gehalten ist, kann dies kann eher angemessen sein.
+% paragraph paragraph_als_alternative (end)
+
+% subsection listen (end)
+
+% section fussnoten_listen (end)
+
+\section{description-Umgebung} % (fold)
+\label{sec:description_umgebung}
+Wenn Sie bestimmte Konzepte beschreiben wollen, ist eine Liste oder ein Unterabschnitt ggf. nicht der beste Weg. Als Alternative gibt es außerdem die \emph{description} Umgebung, die hier nützlich sein kann.
+
+\begin{description}
+	\item[Konzept A] Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+	\item[Konzept B] Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+\end{description}
+
+% section description_umgebung (end)
+
+% chapter additional_chapter (end)
