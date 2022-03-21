@@ -26,13 +26,20 @@ Für die Evaluierung der Gestaltungslösungen und ähnlichen Artefakten wie Wire
 Um das Projekt möglichst transparent und nachvollziehbar zu gestalten, wurden noch vor der Bearbeitung der Artefakte, Tools und Workflows ausgewählt oder erarbeitet, um den Aufwand an einzelnen Tasks und Features zu dokumentieren. Dabei wurde ein Docker Container eines Projektmanagementtools verwendet um grobe Projektphasen zu skizzieren (siehe Diagramm \ref{fig:ganttdiagramm}) und eine Exceltabelle für die automatische Errechnung des Zeitaufwands nach Markdown exportiert, um so in das \href{https://github.com/Inf166/design-concept-sharing-recipies/wiki}{Github Wiki} integriert zu werden. Dort wurden die wesentlichen Erkenntnisse und die \href{https://github.com/Inf166/design-concept-sharing-recipies/wiki/Roadmap}{Roadmap} festgehalten, die sich aus diesem Workflow ergaben.\\
 
 \begin{figure}[h] %!=overrides latex; h=here; t=top; b=bottom; p=special page for floating objects
-    \includegraphics[width=1\textwidth]{images/ganttdiagramm.png}
+\centering
+    \includegraphics[width=0.8\textwidth]{images/ganttdiagramm.png}
     \caption[Ganttdiagramm]{Ganttdiagramm}
     \label{fig:ganttdiagramm}
 \end{figure}
+\begin{figure}[h]
+\centering
+    \includegraphics[width=0.5\textwidth]{images/Din-Norm-Ablaufmodell.png}
+    \caption[ISO 9241-210:2010 - Bild 1]{ISO 9241-210:2010 - Bild 1}
+    \label{fig:din-ablauf}
+\end{figure}
 
 \chapter{Verstehen und Festlegen des Nutzungskontexts}
-Für die Anforderungsermittlung wurde das Vorgehen der DIN-EN-ISO 9241-210 \citep{DINISO_2010} gewählt. Für die Konzeption des Systems wurde hier von den bisherigen Erkenntnissen Abstand genommen und lösungsneutral das Domänenmodell überarbeitet.
+Für die Anforderungsermittlung wurde das Vorgehen der DIN-EN-ISO 9241-210 \citep{DINISO_2010} (siehe Abbildung \ref{fig:din-ablauf}) gewählt. Für die Konzeption des Systems wurde hier von den bisherigen Erkenntnissen Abstand genommen und lösungsneutral das Domänenmodell überarbeitet.
 % Vollständig, Notwendig, Atomar, Verfolgbar, Technisch lösungsneutral, Realisierbar, Konsistent, Eindeutig, Prüfbar, Vollständig, Konsistent, Erschwinglich, Abgegrenzt, Schnittstellenanforderung
 
 \section{Domänenmodell}
