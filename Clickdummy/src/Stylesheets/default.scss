@@ -1,0 +1,32 @@
+// Temp include of bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// 01 Settings
+@import '01-settings/variables';
+
+// 02 Mixins
+
+// 03 Generic
+@import '03-generic/fonts';
+@import '03-generic/layout';
+
+// 04 Atoms
+@import '04-atoms/buttons';
+@import '04-atoms/typography';
+
+// 05 Molecules
+@import '05-molecules/card';
+@import '05-molecules/header';
+
+// 06 Organisms
+@import '06-organisms/navbar';
+@import '06-organisms/search';
+
+// 07 Templates
+
+// 08 Utilities
+
+// 09 Vendor
+
+// 10 Overrides
+@import '10-overrides/bootstrap';

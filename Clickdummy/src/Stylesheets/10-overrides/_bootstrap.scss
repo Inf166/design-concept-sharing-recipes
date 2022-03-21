@@ -1,0 +1,5 @@
+.container {
+  margin: $grid-margin-up-down--mobile $grid-margin-left-right--mobile;
+  padding: 0;
+  max-width: calc(100% - (3rem * 2));
+}

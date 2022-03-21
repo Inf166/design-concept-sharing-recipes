@@ -1,0 +1,97 @@
+$atom: 'btn';
+
+// Atom
+$btn-padding-x:       1rem;
+$btn-padding-y:       2rem;
+$btn-padding-x-y:     $btn-padding-x $btn-padding-y;
+
+$btn-disabled-opacity:  .65;
+$btn-focus-box-shadow:  none;
+$btn-active-box-shadow: none;
+
+$btn-font-family:		    $font-family-sans-serif;
+$btn-font-size:			    $font-size-base * 2.4;
+$btn-font-weight:		    $font-weight-base;
+$btn-text-decoration:   none;
+$btn-line-height:       $line-height-base * 1.25;
+
+$btn-border-radius:	    1.5rem;
+$btn-border-width:	    0.6rem;
+
+// Buttons
+button,.#{$atom} {
+  padding: $btn-padding-x-y;
+
+  color: $black;
+  background-color: $white;
+
+  font-family: $btn-font-family;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  text-decoration: $btn-text-decoration;
+  line-height: $btn-line-height;
+
+  border-radius: $btn-border-radius;
+  border-width: $btn-border-width;
+  border-color: $white;
+
+  svg {
+    width: 4rem;
+    height: 4rem;
+
+    .icon--primary {
+      stroke: $gray-300;
+    }
+  }
+}
+
+button.disabled,.#{$atom}.disabled {
+  opacity: $btn-disabled-opacity;
+}
+
+button + button,
+.#{$atom} + .#{$atom} {
+  margin-left: $grid-margin-left-right--mobile / 2;
+}
+
+.#{$atom}-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem 0.5rem;
+}
+
+// Modifiers
+.#{$atom}--primary {
+  background-color: $primary;
+  border-color: $primary;
+  color: $white;
+}
+
+.#{$atom}--secondary {
+  background-color: $white;
+  border-color: $white;
+  color: $success;
+}
+
+.#{$atom}--tertiary {
+  background-color: transparent;
+  border-color: $primary;
+  color: $primary;
+}
+
+.#{$atom}--delete {
+  background-color: $danger;
+  border-color: $danger;
+  color: $white;
+}
+
+.container--cta {
+  width: 100%;
+  display: flex;
+
+  .#{$atom}--cta {
+    flex-grow: 1;
+    margin: $grid-margin-up-down--mobile $grid-margin-left-right--mobile;
+  }
+}

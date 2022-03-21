@@ -5,8 +5,12 @@
 *.synctex.gz
 *.bbl
 *.blg
-Hello World Tex/**
+
 ~$*.xlsx
+
+Hello World Tex/**
 Abschlussarbeit/images/Joel_Mai_Unterschrift.jpg
 
 .idea
+
+Clickdummy/node_modules/*

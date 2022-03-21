@@ -1,0 +1,102 @@
+<div class="search">
+    <div class="search-bar">
+        <button type="button" class="btn search-submit">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon--primary" d="M15.5003 18.0001C12.8184 19.4798 8.37277 20.2425 5.49598 17.3657C-2.49976 9.00012 8.90653 -0.711325 16.3442 6.51765C19.3252 9.41496 18.5235 13.8365 17.0003 16.5001M15.5003 18.0001C16.8583 17.2508 16.2347 17.8388 17.0003 16.5001M15.5003 18.0001L17.0003 16.5001M15.5003 18.0001L23.7627 26.5382C24.6539 27.4592 26.1268 27.4713 27.033 26.565V26.565C28.0529 25.5452 27.8897 23.8484 26.6941 23.0416L17.0003 16.5001M10.0003 7.00012C11.0003 6.50012 12.5003 7.00012 13.0003 8.00012" stroke="#F6F5EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <input type="search" id="form1" class="search-input" placeholder="Suche" />
+        <button type="button" class="btn search-close">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon--primary" d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+    <div class="search-expand">
+        <button type="button" class="btn search-expand-filter" onclick="document.getElementById('search-filter').classList.toggle('d-none');document.getElementById('expand-filter-icon').classList.toggle('rotate');">
+            <svg id="expand-filter-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon--primary" d="M28 10L17.4142 20.5858C16.6332 21.3668 15.3668 21.3668 14.5858 20.5858L4 9.99988" stroke="#F6F5EF" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+    <div id="search-filter" class="search-filter d-none">
+        <ul>
+            <li class="custom-check">
+                <input type="checkbox" id="favorites" name="favorites">
+                <label for="favorites"><span></span>Nur Favoriten</label>
+            </li>
+            <li class="custom-check">
+                <input type="checkbox" id="saved" name="saved">
+                <label for="saved"><span></span>Nur Gespeicherte</label>
+            </li>
+        </ul>
+        <ul>
+            <li class="custom-check">
+                <input type="checkbox" id="easy" name="easy">
+                <label for="easy"><span></span>Einfach</label>
+            </li>
+            <li class="custom-check">
+                <input type="checkbox" id="normal" name="normal">
+                <label for="normal"><span></span>Normal</label>
+            </li>
+            <li class="custom-check">
+                <input type="checkbox" id="advanced" name="advanced">
+                <label for="advanced"><span></span>Anspruchsvoll</label>
+            </li>
+        </ul>
+        <select class="select" data-mdb-filter="true">
+            <option value="combined">Koch-/Backdauer</option>
+            <option value="cooktime">Kochdauer</option>
+            <option value="baketime">Backdauer</option>
+        </select>
+        <div class="duration">
+            <input type="range" min="0" max="60" value="30" class="slider" step="15" id="duration-range" list="duration">
+            <ul class="duration-info">
+                <li><span>Alle</span></li>
+                <li><span>&lt; 10 min</span></li>
+                <li><span>&lt; 20 min</span></li>
+                <li><span>&lt; 45 min</span></li>
+                <li><span>&gt; 60 min</span></li>
+            </ul>
+        </div>
+        <div class="categories custom-check">
+            <input type="checkbox" id="respect-categories" name="categories" onclick="document.getElementById('additional').classList.toggle('d-none');">
+            <label for="respect-categories"><span></span>Nur bestimmte Kategorien</label>
+        </div>
+        <div id="additional" class="additional d-none">
+            <div>
+                <label for="heritage">Herkunft</label>
+                <select id="heritage" class="select" data-mdb-filter="true">
+                    <option value="de">Deutschland</option>
+                </select>
+            </div>
+            <div>
+                <label for="reason">Anlass</label>
+                <select id="reason" class="select" data-mdb-filter="true">
+                    <option value="party">Party</option>
+                </select>
+            </div>
+            <div>
+                <label for="category">Kategorie</label>
+                <select id="category" class="select" data-mdb-filter="true">
+                    <option value="barbecue">Grillen</option>
+                </select>
+            </div>
+            <div>
+                <label for="diet">Ernährungsart</label>
+                <select id="diet" class="select" data-mdb-filter="true">
+                    <option value="none">-</option>
+                </select>
+            </div>
+            <div>
+                <label for="intolerance">Unverträglichkeit</label>
+                <select id="intolerance" class="select" data-mdb-filter="true">
+                    <option value="none">-</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
