@@ -1,0 +1,67 @@
+$molecules: 'author';
+
+// Cards
+.#{$molecules} {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  .#{$molecules}__image {
+    width: 6rem;
+    height: auto;
+    margin-right: 0.5rem;
+
+    border-radius: 6rem;
+    border: 0.4rem solid $gray-200;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+  .#{$molecules}__info {
+
+    span {
+      display: block;
+    }
+    .#{$molecules}__name {
+      font-size: $btn-font-size;
+      font-weight: $font-weight-normal;
+      color: $black;
+    }
+    .#{$molecules}__count-published {
+      font-size: $btn-font-size;
+      font-weight: $font-weight-normal;
+      color: $gray-300;
+    }
+  }
+}
+
+// Modifiers
+.#{$molecules}--teaser {
+  width: 100%;
+
+  .#{$molecules}__image {
+    border-color: $primary;
+    width: 8rem;
+    height: auto;
+    margin-right: 2rem;
+  }
+  .#{$molecules}__info {
+    .#{$molecules}__name {
+      font-size: $btn-font-size*1.4;
+    }
+    .#{$molecules}__count-published {
+      font-size: $btn-font-size*1.4;
+    }
+  }
+  .#{$molecules}__add {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  & + .#{$molecules}--teaser {
+    margin-top: 2rem;
+  }
+}

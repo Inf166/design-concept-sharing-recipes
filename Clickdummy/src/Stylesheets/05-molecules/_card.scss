@@ -183,3 +183,42 @@ $molecules: 'card';
     }
   }
 }
+
+.#{$molecules}--friend-request {
+  padding: 1.5rem;
+  margin-bottom: 2.4rem;
+
+  .actions {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.#{$molecules}--notification {
+  border-color: $gray-300;
+  padding: 1.8rem;
+
+  blockquote {
+    font-size: 2.4rem;
+    color: $gray-300;
+  }
+  p {
+    font-size: 3.4rem;
+    color: $primary;
+  }
+  .top-bar {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    svg {
+      width: 3rem;
+      height: 3rem;
+
+      .icon--primary {
+        stroke: $gray-400;
+      }
+    }
+  }
+}

@@ -18,15 +18,21 @@ $organism: 'search';
       flex-grow: 1;
       font-size: 3rem;
       font-family: $font-family-base;
+      outline: none;
+
+      &::-webkit-search-cancel-button {
+        display: none;
+      }
     }
     .btn {
       border-radius: 0;
       background-color: transparent;
     }
     .search-submit {
+      outline: none;
     }
     .search-close {
-      display: none;
+      outline: none;
     }
   }
   .search-expand {

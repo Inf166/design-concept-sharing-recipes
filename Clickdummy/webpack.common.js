@@ -62,6 +62,26 @@ module.exports = {
       filename: 'index.html',
       template: path.resolve(__dirname, './src/Snippets/04-templates/index.hbs')
     }),
+    new HtmlWebPackPlugin({
+      filename: 'notifications.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/index--notifications.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'friends.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/index--friends.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'new-recipe.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/new-recipe.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'cookbook.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/cookbook.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'profile.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/profile.hbs')
+    }),
     new CopyWebpackPlugin({
       patterns: [
         { from: path.resolve(__dirname, './src/Fonts'), to: 'Fonts' },

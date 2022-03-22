@@ -33,3 +33,25 @@ $molecules: 'header';
     }
   }
 }
+
+// Modifiers
+
+.back {
+  a {
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+  }
+
+  svg {
+    width: 5rem;
+    height: 5rem;
+  }
+  h2 {
+    font-size: 4.6rem;
+    font-weight: $font-weight-bold;
+    font-family: $font-family-sans-serif;
+    color: $white;
+    margin-bottom: 0;
+  }
+}
