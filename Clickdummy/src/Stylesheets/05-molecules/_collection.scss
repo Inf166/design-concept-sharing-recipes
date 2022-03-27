@@ -25,3 +25,30 @@ $molecules: 'collection';
     color: $gray-200;
   }
 }
+
+.#{$molecules}--add-new {
+  border: 0.8rem solid $primary;
+  border-radius: 3rem;
+  width: 100%;
+  height: calc(100% - 8rem);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  svg {
+    width: 8rem;
+    height: 8rem;
+
+    .icon--primary {
+      stroke: $primary;
+    }
+  }
+  .#{$molecules}__add-new {
+    text-align: center;
+    font-weight: $font-weight-medium;
+    font-size: 2.4rem;
+    color: $gray-200;
+  }
+}
