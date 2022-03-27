@@ -1,7 +1,0 @@
-{
-  "name": "Mein Kochbuch",
-  "short_name": "Kochbuch",
-  "start_url": ".",
-  "display": "standalone",
-  "description": "Clickdummy für Mein Kochbuch",
-}
