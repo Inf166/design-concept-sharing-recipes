@@ -12,6 +12,18 @@ module.exports = merge(common, {
     path: path.resolve(__dirname, "dist"),
     publicPath: "/design-concept-sharing-recipies/"
   },
+  module: {
+    rules: [
+      {
+        test: /\.(hbs)/i,
+        loader: 'string-replace-loader',
+        options: {
+          search: 'a href="/',
+          replace: 'a href="/design-concept-sharing-recipies/',
+        }
+      },
+    ]
+  },
   plugins: [
     new CleanWebpackPlugin(),
   ]
