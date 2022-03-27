@@ -1,6 +1,6 @@
 # Praxisprojekt Sommersemester 2021 Mai
 
-## [WIP][ClickDummy](https://inf166.github.io/design-concept-sharing-recipies/)
+## [WIP][ClickDummy](https://inf166.github.io/design-concept-sharing-recipes/)
 
 ## [Mobile Prototype](https://figma.fun/s3UhPh/view)
 

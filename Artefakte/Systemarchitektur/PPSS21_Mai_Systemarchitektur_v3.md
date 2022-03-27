@@ -52,7 +52,7 @@ Hier werden die Datenbank Operationen durchgeführt und die Benachrichtigungen f
 
 --- 
 
-### Recipies Module
+### Recipes Module
 
 #### Event Processing Logic
 Alle Änderungen sowie Archivierungen, Löschungen und Erstellungen von Rezepten werden hier eingereit und Stück für Stück an die Manager Module oder Publisher Module weitergegeben.

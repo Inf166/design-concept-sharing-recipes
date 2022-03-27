@@ -10,7 +10,7 @@ module.exports = merge(common, {
   output: {
     filename: "JavaScripts/[name]-[hash].bundle.js",
     path: path.resolve(__dirname, "dist"),
-    publicPath: "/design-concept-sharing-recipies/"
+    publicPath: "/design-concept-sharing-recipes/"
   },
   module: {
     rules: [
@@ -19,7 +19,7 @@ module.exports = merge(common, {
         loader: 'string-replace-loader',
         options: {
           search: 'a href="/',
-          replace: 'a href="/design-concept-sharing-recipies/',
+          replace: 'a href="/design-concept-sharing-recipes/',
         }
       },
     ]
