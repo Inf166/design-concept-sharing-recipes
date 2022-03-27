@@ -1,0 +1,92 @@
+$organism: 'profile';
+
+// Profile
+.#{$organism} {
+
+}
+
+.#{$organism}--head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  .#{$organism}__name {
+    font-weight: $font-weight-medium;
+    font-size: 5rem;
+    color: $black;
+  }
+  .#{$organism}__image {
+    border: 1rem solid $primary;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 70%;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.#{$organism}--friend-list {
+
+  .friend-list {
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+  }
+
+  .friend-list--info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    h3 {
+      font-weight: $font-weight-bold;
+      font-size: 4rem;
+      color: $black;
+    }
+    a {
+      font-weight: $font-weight-bold;
+      font-size: 2rem;
+      color: $primary;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+
+      svg {
+        .icon--primary {
+          stroke: $primary;
+        }
+      }
+    }
+  }
+  .friend-list__item {
+    margin-right: 2.4rem;
+
+    .profile__image {
+      border: 0.4rem solid $primary;
+      border-radius: 50%;
+      overflow: hidden;
+      width: 10rem;
+      height: auto;
+      margin-bottom: 0.5rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .profile__name {
+      font-weight: $font-weight-normal;
+      font-size: 2rem;
+      color: $gray-400;
+    }
+  }
+}
