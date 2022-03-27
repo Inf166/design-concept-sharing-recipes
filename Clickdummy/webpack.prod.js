@@ -20,6 +20,7 @@ module.exports = merge(common, {
         options: {
           search: 'a href="/',
           replace: 'a href="/design-concept-sharing-recipes/',
+          flags: 'g',
         }
       },
     ]

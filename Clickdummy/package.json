@@ -2,7 +2,7 @@
   "name": "clickdummy",
   "version": "1.0.0",
   "private": true,
-  "description": "A clickdummy for the app desingned in this iteration",
+  "description": "A click dummy for the app designed in this iteration",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack.dev.js --open",
