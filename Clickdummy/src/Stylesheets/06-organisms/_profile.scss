@@ -31,15 +31,20 @@ $organism: 'profile';
   }
 }
 
-.#{$organism}--friend-list {
+.#{$organism}--slider {
 
-  .friend-list {
+  .slider {
     display: flex;
     flex-direction: row;
     overflow: scroll;
+
+    .card {
+      width: 80vw;
+      margin-bottom: 2rem;
+    }
   }
 
-  .friend-list--info {
+  .slider--info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -59,6 +64,7 @@ $organism: 'profile';
       flex-direction: row;
       align-content: center;
       align-items: center;
+      width: fit-content;
 
       svg {
         .icon--primary {
@@ -67,7 +73,7 @@ $organism: 'profile';
       }
     }
   }
-  .friend-list__item {
+  .slider__item {
     margin-right: 2.4rem;
 
     .profile__image {
