@@ -66,7 +66,13 @@ $organism: 'profile';
       align-items: center;
       width: fit-content;
 
+      span {
+        margin-right: 1rem;
+      }
       svg {
+        height: 100%;
+        width: auto;
+
         .icon--primary {
           stroke: $primary;
         }

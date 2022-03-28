@@ -80,6 +80,12 @@ button + button,
   color: $primary;
 }
 
+.#{$atom}--warning {
+  background-color: $white;
+  border-color: $white;
+  color: $info;
+}
+
 .#{$atom}--delete {
   background-color: $danger;
   border-color: $danger;
