@@ -1,0 +1,52 @@
+$organism: 'settings';
+
+// Settings
+.#{$organism} {
+
+  h3 {
+    font-weight: $font-weight-bold;
+    font-size: 4.5rem;
+    color: $black;
+    margin-bottom: 3rem;
+  }
+  .#{$organism}__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+
+    li {
+      margin-bottom: 4rem;
+    }
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: 1.5rem;
+        font-weight: $font-weight-bold;
+        font-size: 4rem;
+        color: $black;
+      }
+    }
+    svg {
+      border-radius: 1rem;
+      background-color: $warning;
+      width: 6rem;
+      height: 6rem;
+      padding: 0.5rem;
+    }
+  }
+}
+
+// Modifiers
+.#{$organism} {
+  .#{$organism}__list {
+    .action-danger {
+      svg {
+        background-color: $danger;
+      }
+    }
+  }
+}
