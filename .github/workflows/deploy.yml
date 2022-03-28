@@ -23,5 +23,6 @@ jobs:
 
       - name: Install dependencies & Build Frontend
         run: |
+          cd Clickdummy
           npm install
           npm run deploy
