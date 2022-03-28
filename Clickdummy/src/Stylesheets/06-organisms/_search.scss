@@ -27,6 +27,10 @@ $organism: 'search';
     .btn {
       border-radius: 0;
       background-color: transparent;
+
+      .icon--primary {
+        stroke: $gray-300;
+      }
     }
     .search-submit {
       outline: none;

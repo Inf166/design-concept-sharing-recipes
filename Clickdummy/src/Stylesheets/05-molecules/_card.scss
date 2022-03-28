@@ -3,10 +3,42 @@ $molecules: 'card';
 // Cards
 .#{$molecules} {
   background-color: $white;
-  border-left: 18px solid $gray-200;
+  border-left: 18px solid $primary;
   border-radius: $btn-border-radius;
   overflow: hidden;
 
+  .#{$molecules}__actions {
+    position: absolute;
+    z-index: $z-index-foreground;
+    top: 0;
+    right: 0;
+
+    button.btn.btn--action{
+      background-color: transparent;
+      border-color: transparent;
+      padding: 1rem 0;
+
+      svg {
+        width: 5rem;
+        height: 5rem;
+        fill: $white;
+
+        path.icon--primary {
+          stroke: $primary;
+        }
+      }
+    }
+    button.btn.btn--action.action--set {
+      svg {
+        fill: $primary;
+
+        path.icon--primary {
+          stroke: $white;
+        }
+      }
+    }
+
+  }
   .#{$molecules}__label {
 
     span {
@@ -17,7 +49,7 @@ $molecules: 'card';
       width: auto;
 
       color: $white;
-      background-color: $gray-200;
+      background-color: $primary;
       font-size: $btn-font-size;
       font-weight: $btn-font-weight;
     }
@@ -38,7 +70,7 @@ $molecules: 'card';
       left: $btn-padding-y;
       padding: $btn-padding-x;
       border-radius: 1rem;
-      background-color: $gray-200;
+      background-color: $primary;
       color: $white;
       font-size: 3rem;
       font-weight: $font-weight-medium;
@@ -106,7 +138,7 @@ $molecules: 'card';
         margin-right: 0.5rem;
 
         border-radius: 6rem;
-        border: 0.4rem solid $gray-200;
+        border: 0.4rem solid $primary;
         overflow: hidden;
 
         img {
@@ -141,6 +173,20 @@ $molecules: 'card';
 .recipe--recommendation {
   border-left: 18px solid $danger;
 
+  .#{$molecules}__actions {
+    button.btn.btn--action {
+      svg {
+        path.icon--primary {
+          stroke: $danger;
+        }
+      }
+    }
+    button.btn.btn--action.action--set {
+      svg {
+        fill: $danger;
+      }
+    }
+  }
   .#{$molecules}__label {
     span { background-color: $danger; }
   }
@@ -156,6 +202,20 @@ $molecules: 'card';
 .recipe--new {
   border-left: 18px solid $warning;
 
+  .#{$molecules}__actions {
+    button.btn.btn--action {
+      svg {
+        path.icon--primary {
+          stroke: $warning;
+        }
+      }
+    }
+    button.btn.btn--action.action--set {
+      svg {
+        fill: $warning;
+      }
+    }
+  }
   .#{$molecules}__label {
     span { background-color: $warning; }
   }
@@ -171,6 +231,20 @@ $molecules: 'card';
 .recipe--private {
   border-left: 18px solid $success;
 
+  .#{$molecules}__actions {
+    button.btn.btn--action {
+      svg {
+        path.icon--primary {
+          stroke: $success;
+        }
+      }
+    }
+    button.btn.btn--action.action--set {
+      svg {
+        fill: $success;
+      }
+    }
+  }
   .#{$molecules}__label {
     span { background-color: $success; }
   }
