@@ -82,6 +82,10 @@ module.exports = {
       filename: 'profile.html',
       template: path.resolve(__dirname, './src/Snippets/04-templates/profile.hbs')
     }),
+    new HtmlWebPackPlugin({
+      filename: 'friend-list.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/friendlist.hbs')
+    }),
     new CopyWebpackPlugin({
       patterns: [
         { from: path.resolve(__dirname, './src/Fonts'), to: 'Fonts' },
