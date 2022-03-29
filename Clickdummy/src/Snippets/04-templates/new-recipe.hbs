@@ -4,6 +4,20 @@
 <body>
 {{> ../03-organisms/navbar--new-recipe }}
 {{> ../02-molecules/header }}
-<h2>TEST</h2>
+<div class="container recipe-form">
+    <div class="row recipe-form__progress">
+        {{> ../02-molecules/progress }}
+    </div>
+    <div class="row recipe-form__description">
+        {{> ../02-molecules/create-step }}
+    </div>
+    <div class="row recipe-form__step">
+        {{> ../03-organisms/step--title }}
+    </div>
+    <div class="row recipe-form__navigation">
+        {{> ../02-molecules/step-navigation }}
+    </div>
+</div>
+
 </body>
 </html>

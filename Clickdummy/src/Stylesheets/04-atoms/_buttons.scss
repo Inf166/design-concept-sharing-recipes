@@ -136,9 +136,13 @@ button + button,
 .container--cta {
   width: 100%;
   display: flex;
+  padding: $grid-margin-up-down--mobile $grid-margin-left-right--mobile;
+
+  & > * {
+    flex: 1;
+  }
 
   .#{$atom}--cta {
-    flex-grow: 1;
-    margin: $grid-margin-up-down--mobile $grid-margin-left-right--mobile;
+
   }
 }
