@@ -71,7 +71,7 @@ $template: 'recipe-form';
       height: fit-content;
       width: 100%;
 
-      input[type="text"] {
+      .input-type--text {
         color: $primary;
         border: none;
         border-bottom: 4px solid $black;
