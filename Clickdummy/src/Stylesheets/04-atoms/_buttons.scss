@@ -35,10 +35,20 @@ button,.#{$atom} {
   border-width: $btn-border-width;
   border-color: $white;
 
+  outline: none;
+
   svg {
     width: 4rem;
     height: 4rem;
   }
+}
+
+button:hover,
+button:focus {
+  outline: none;
+  color: lighten($black, 20%);
+  background-color: darken($white, 10%);
+  border-color: darken($white, 20%);
 }
 
 button.disabled,.#{$atom}.disabled {
@@ -62,30 +72,65 @@ button + button,
   background-color: $primary;
   border-color: $primary;
   color: $white;
+
+  &:focus,
+  &:hover {
+    color: lighten($white, 20%);
+    background-color: darken($primary, 6%);
+    border-color: lighten($primary, 4%);
+  }
 }
 
 .#{$atom}--secondary {
   background-color: $white;
   border-color: $white;
   color: $success;
+
+  &:focus,
+  &:hover {
+    color: $success;
+    background-color: darken($white, 6%);
+    border-color: lighten($white, 2%);
+  }
 }
 
 .#{$atom}--tertiary {
   background-color: transparent;
   border-color: $primary;
   color: $primary;
+
+  &:focus,
+  &:hover {
+    color: lighten($primary, 8%);;
+    background-color: $white;
+    border-color: lighten($primary, 8%);
+  }
 }
 
 .#{$atom}--warning {
   background-color: $white;
   border-color: $white;
   color: $info;
+
+  &:focus,
+  &:hover {
+    color: $info;
+    background-color: darken($white, 6%);
+    border-color: lighten($white, 2%);
+  }
 }
 
 .#{$atom}--delete {
   background-color: $danger;
   border-color: $danger;
   color: $white;
+
+  &:focus,
+  &:hover {
+    color: lighten($white, 20%);
+    background-color: darken($danger, 8%);
+    border-color: lighten($danger, 4%);
+  }
 }
 
 .container--cta {
