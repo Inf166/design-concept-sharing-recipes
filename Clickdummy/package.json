@@ -25,14 +25,14 @@
   },
   "homepage": "https://github.com/Inf166/design-concept-sharing-recipes#readme",
   "dependencies": {
-    "clean-webpack-plugin": "^4.0.0",
-    "gh-pages": "^3.2.3"
+    "clean-webpack-plugin": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "bootstrap": "^5.1.3",
     "copy-webpack-plugin": "^10.2.4",
     "css-loader": "^6.7.1",
+    "gh-pages": "^3.2.3",
     "handlebars-loader": "^1.7.1",
     "handlebars-webpack-plugin": "^2.2.1",
     "html-webpack-plugin": "^5.5.0",
