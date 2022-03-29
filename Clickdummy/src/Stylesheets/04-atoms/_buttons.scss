@@ -142,7 +142,12 @@ button + button,
     flex: 1;
   }
 
-  .#{$atom}--cta {
+  &.btn--skip {
+    justify-content: flex-end;
 
+    .#{$atom}--cta {
+        max-width: calc(50% - 0.8rem);
+        flex-grow: 1;
+      }
   }
 }

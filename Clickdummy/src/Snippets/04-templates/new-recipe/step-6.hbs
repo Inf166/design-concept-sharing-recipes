@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de" class="html">
+{{> ../../01-atoms/head }}
+<body>
+{{> ../../03-organisms/navbar--new-recipe }}
+{{> ../../02-molecules/header--new-recipe }}
+<div class="container recipe-form">
+    <div class="row recipe-form__progress">
+        <div class="progress__bar">
+            <div class="bar__progress progress--6-14"></div>
+        </div>
+        <div class="progress__info">
+            <h2>Schritt 6 von 14</h2>
+            <span>Nächster Schritt: <br> Haushaltsgeräte angeben</span>
+        </div>
+    </div>
+    <div class="row recipe-form__description">
+        <h2>Herkunft festlegen</h2>
+        <span class="tipp">Bitte wähle die passende Herkunft aus, um es dir und anderen Nutzern zu erleichtern, das Rezept wiederzufinden.</span>
+    </div>
+    <div class="row recipe-form__step">
+        <div class="form">
+            <script type="text/javascript">
+                function removeCategory(object) {
+                    object.classList.toggle('d-none');
+                }
+                function addCategory(categoryName) {
+                    document.getElementById('categories-list').innerHTML = '<button class="categories__item" onclick="removeCategory(this)"><span>'
+                    + categoryName +
+                    '</span><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/></svg></button>'
+                    + document.getElementById('categories-list').innerHTML;
+                }
+            </script>
+            <div id="categories-list" class="recipe-form__item categories">
+                <button class="categories__item" onclick="removeCategory(this)">
+                    <span>Deutschland</span>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="recipe-form__item input-category">
+                <input type="text" class="input-type--text input-category--text" id="category" placeholder="Deutschland">
+                <button class="input-category--add" onclick="addCategory(document.getElementById('category').value);document.getElementById('category').value = '';">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="icon--primary" d="M5.48179 15.9999H16M26.5182 15.9999H16M16 15.9999V5.48169M16 15.9999V26.5181" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="recipe-form__item">
+                <ul class="input-category-list">
+                    <li>
+                        <button class="categories__item" onclick="addCategory('Dänemark')">
+                            <span>Dänemark</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="categories__item" onclick="addCategory('Dominikanische Republik')">
+                            <span>Dominikanische Republik</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="categories__item" onclick="addCategory('Dschibuti')">
+                            <span>Dschibuti</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row recipe-form__navigation">
+        <div class="container--cta btn--skip">
+            <a href="/new-recipe/step-7.html" class="btn btn--tertiary btn--cta">
+                Überspringen
+            </a>
+        </div>
+        <div class="container--cta">
+            <a href="/new-recipe/step-5.html" class="btn btn--secondary btn--cta">
+                Zurück
+            </a>
+            <a href="/new-recipe/step-7.html" class="btn btn--primary btn--cta">
+                Weiter
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

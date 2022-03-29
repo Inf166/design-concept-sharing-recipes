@@ -24,6 +24,21 @@ $template: 'recipe-form';
         width: calc(0.5 * 100%);
         height: 4rem;
         background-color: $primary;
+
+        &.progress--1-14 {width: calc( (1 / 14) * 100%);}
+        &.progress--2-14 {width: calc( (2 / 14) * 100%);}
+        &.progress--3-14 {width: calc( (3 / 14) * 100%);}
+        &.progress--4-14 {width: calc( (4 / 14) * 100%);}
+        &.progress--5-14 {width: calc( (5 / 14) * 100%);}
+        &.progress--6-14 {width: calc( (6 / 14) * 100%);}
+        &.progress--7-14 {width: calc( (7 / 14) * 100%);}
+        &.progress--8-14 {width: calc( (8 / 14) * 100%);}
+        &.progress--9-14 {width: calc( (9 / 14) * 100%);}
+        &.progress--10-14 {width: calc( (10 / 14) * 100%);}
+        &.progress--11-14 {width: calc( (11 / 14) * 100%);}
+        &.progress--12-14 {width: calc( (12 / 14) * 100%);}
+        &.progress--13-14 {width: calc( (13 / 14) * 100%);}
+        &.progress--14-14 {width: calc( (14 / 14) * 100%);}
       }
     }
     .progress__info {
@@ -34,11 +49,13 @@ $template: 'recipe-form';
       margin-bottom: 1rem;
 
       h2 {
+        flex-grow: 1;
         font-size: 3.5rem;
         color: $black;
         margin-bottom: 0;
       }
       span {
+        flex-shrink: 1;
         font-size: 1.8rem;
         color: $primary;
         font-family: $font-family-monospace;
@@ -66,21 +83,193 @@ $template: 'recipe-form';
     display: flex;
     flex-direction: column;
     justify-content: center;
+    //TODO find a better solution
+    overflow-y: scroll;
 
-    form {
+    .form {
       height: fit-content;
       width: 100%;
+      display: flex;
+      flex-direction: column;
 
+      .#{$template}__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 3rem;
+
+        &.person-count-group {
+
+          button {
+            min-width: 12rem;
+          }
+          .input-type--text {
+            margin: 0 4rem;
+            text-align: center;
+          }
+        }
+      }
+      label {
+        font-size: 3rem;
+        font-family: $font-family-base;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        margin-right: 2rem;
+      }
+      .categories {
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        padding-bottom: 2rem;
+
+        .categories__item {
+          display: flex;
+          width: fit-content;
+          flex-shrink: 0;
+          flex-direction: row;
+          align-items: center;
+          padding: 1.5rem 3rem;
+          background-color: $citron;
+          border: 0.6rem solid lighten($citron, 20%);
+          border-radius: 4rem;
+
+          span {
+            color: $white;
+            font-weight: $font-weight-black;
+            letter-spacing: 0.4rem;
+          }
+          svg {
+
+          }
+        }
+      }
+      .input-category {
+        border: 0.6rem solid $citron;
+        border-radius: 1rem;
+        overflow: hidden;
+        background-color: $white;
+
+        .input-category--add {
+          background-color: transparent;
+          border: none;
+
+          svg {
+
+            .icon--primary {
+              stroke: $citron;
+            }
+          }
+        }
+      }
+      .input-category-list {
+        margin-top: -3.6rem;
+        border: 0.6rem solid $citron;
+        border-radius: 1rem;
+        overflow: hidden;
+        overflow-y: scroll;
+        background-color: $white;
+        height: 16rem;
+        width: 100%;
+        list-style: none;
+        padding: 0;
+
+        li {
+          button {
+            width: 100%;
+            border: none;
+            text-align: left;
+
+            span  {
+              color: $primary;
+            }
+          }
+        }
+      }
+      .input-type--select {
+        min-width: 16rem;
+        font-size: 2.6rem;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 0.8rem;
+        margin-left: 3rem;
+        border: 0.6rem solid $black;
+        border-radius: 1.2rem;
+        color: $black;
+        background: url("../Icons/Icon-Arrow-Down--black.svg") transparent no-repeat 95% !important;
+
+        &::-ms-expand { display: none; }
+      }
+      .input-type--radio {
+        display: none;
+
+        &:checked {
+          display: none;
+        }
+        & + label span {
+          display: inline-block;
+          vertical-align: middle;
+          width: 4.6rem;
+          height: 4.6rem;
+          margin-right: 0.8rem;
+          background: url(../Icons/Icon-Radio-Unchecked.svg) 0px center no-repeat;
+          background-size: cover;
+        }
+        &:checked + label span {
+          background: url(../Icons/Icon-Radio-Checked.svg) 0px center no-repeat;
+          background-size: cover;
+        }
+      }
+      .bake-mode {
+        justify-content: space-between;
+
+        svg {
+          width: 6rem;
+          height: 6rem;
+        }
+        .input-type--radio {
+          display: none;
+
+          &:checked {
+            display: none;
+          }
+          & + label {
+            margin: 0;
+            padding: 1rem;
+            border-radius: 1rem;
+            flex-grow: 0;
+            background-color: $citron;
+          }
+          &:checked + label {
+            background-color: $primary;
+          }
+        }
+      }
       .input-type--text {
         color: $primary;
         border: none;
-        border-bottom: 4px solid $black;
+        border-bottom: 0.6rem solid $black;
+        border-bottom-left-radius: 0.6rem;
+        border-bottom-right-radius: 0.6rem;
         background: transparent;
         width: 100%;
+        height: 100%;
         font-size: 3rem;
         font-family: $font-family-base;
         outline: none;
 
+        &.input--time {
+          width: 6rem;
+          text-align: center;
+        }
+        &.input-category--text {
+          border: 0;
+          border-radius: 0;
+          color: $citron;
+          padding-left: 2rem;
+        }
         &::-webkit-search-cancel-button {
           //display: none;
         }

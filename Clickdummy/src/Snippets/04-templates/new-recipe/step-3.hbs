@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de" class="html">
+{{> ../../01-atoms/head }}
+<body>
+{{> ../../03-organisms/navbar--new-recipe }}
+{{> ../../02-molecules/header--new-recipe }}
+<div class="container recipe-form">
+    <div class="row recipe-form__progress">
+        <div class="progress__bar">
+            <div class="bar__progress progress--3-14"></div>
+        </div>
+        <div class="progress__info">
+            <h2>Schritt 3 von 14</h2>
+            <span>Nächster Schritt: <br> Zeitaufwand angeben</span>
+        </div>
+    </div>
+    <div class="row recipe-form__description">
+        <h2>Personenzahl angeben</h2>
+        <span class="tipp">Die angegebene Personenzahl kann in der Detailansicht abgeändert werden und somit die Zutatenmengen dynamisch angepasst werden.</span>
+    </div>
+    <div class="row recipe-form__step">
+        <div class="form">
+            <div class="recipe-form__item person-count-group">
+                <button class="btn btn--secondary" onclick="document.getElementById('person-count').value++">+</button>
+                <input type="text" class="input-type--text" id="person-count" placeholder="2">
+                <button class="btn btn--secondary" onclick="if(document.getElementById('person-count').value>1)document.getElementById('person-count').value--;">-</button>
+            </div>
+        </div>
+    </div>
+    <div class="row recipe-form__navigation">
+        <div class="container--cta">
+            <a href="/new-recipe/step-2.html" class="btn btn--secondary btn--cta">
+                Zurück
+            </a>
+            <a href="/new-recipe/step-4.html" class="btn btn--primary btn--cta">
+                Weiter
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de" class="html">
+{{> ../../01-atoms/head }}
+<body>
+{{> ../../03-organisms/navbar--new-recipe }}
+{{> ../../02-molecules/header--new-recipe }}
+<div class="container recipe-form">
+    <div class="row recipe-form__progress">
+        <div class="progress__bar">
+            <div class="bar__progress progress--8-14"></div>
+        </div>
+        <div class="progress__info">
+            <h2>Schritt 8 von 14</h2>
+            <span>Nächster Schritt: <br> Vorbereitung beschreiben</span>
+        </div>
+    </div>
+    <div class="row recipe-form__description">
+        <h2>Zutaten angeben</h2>
+        <span class="tipp">Bitte gebe die Zutaten in der selben Reihenfolge an, wie du sie auch im Rezept nutzt.</span>
+    </div>
+    <div class="row recipe-form__step">
+        <h1>WIP</h1>
+    </div>
+    <div class="row recipe-form__navigation">
+        <div class="container--cta btn--skip">
+            <a href="/new-recipe/step-8.html" class="btn btn--tertiary btn--cta">
+                Überspringen
+            </a>
+        </div>
+        <div class="container--cta">
+            <a href="/new-recipe/step-7.html" class="btn btn--secondary btn--cta">
+                Zurück
+            </a>
+            <a href="/new-recipe/step-8.html" class="btn btn--primary btn--cta">
+                Weiter
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

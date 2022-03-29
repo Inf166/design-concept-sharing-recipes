@@ -90,6 +90,34 @@ module.exports = {
       filename: 'settings.html',
       template: path.resolve(__dirname, './src/Snippets/04-templates/settings.hbs')
     }),
+    new HtmlWebPackPlugin({
+      filename: 'new-recipe/step-2.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/new-recipe/step-2.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'new-recipe/step-3.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/new-recipe/step-3.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'new-recipe/step-4.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/new-recipe/step-4.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'new-recipe/step-5.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/new-recipe/step-5.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'new-recipe/step-6.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/new-recipe/step-6.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'new-recipe/step-7.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/new-recipe/step-7.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'new-recipe/step-8.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/new-recipe/step-8.hbs')
+    }),
     new CopyWebpackPlugin({
       patterns: [
         { from: path.resolve(__dirname, './src/Fonts'), to: 'Fonts' },
