@@ -5,8 +5,8 @@ $template: 'recipe-form';
   display: flex;
   flex-direction: column;
   // TODO Find a better solution
-  height: calc(100vh - 24rem );
-  max-height: calc(100vh - 24rem );
+  height: calc(100vh - 34rem );
+  max-height: calc(100vh - 34rem );
 
   .#{$template}__progress {
     display: flex;
