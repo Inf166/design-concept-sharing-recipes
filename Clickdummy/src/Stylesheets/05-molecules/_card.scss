@@ -9,6 +9,7 @@ $molecules: 'card';
 
   .#{$molecules}__actions {
     position: absolute;
+    display: flex;
     z-index: $z-index-foreground;
     top: 0;
     right: 0;

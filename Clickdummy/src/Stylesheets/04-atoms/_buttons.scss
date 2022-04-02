@@ -20,6 +20,10 @@ $btn-border-width:	    0.6rem;
 
 // Buttons
 button,.#{$atom} {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
   padding: $btn-padding-x-y;
 
   color: $black;

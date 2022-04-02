@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de" class="html">
+{{> ../../01-atoms/head }}
+<body>
+{{> ../../03-organisms/navbar/new-recipe }}
+{{> ../../02-molecules/header/new-recipe }}
+<div class="container recipe-form">
+    <div class="row recipe-form__progress">
+        <div class="progress__bar">
+            <div class="bar__progress progress--13-14"></div>
+        </div>
+        <div class="progress__info">
+            <h2>Schritt 13 von 14</h2>
+            <span>Nächster Schritt: <br> Freunden empfehlen</span>
+        </div>
+    </div>
+    <div class="row recipe-form__description">
+        <h2>Anekdote angeben</h2>
+        <span class="tipp">Tipp: Anekdoten sollen dich und deine Engsten an wichtige Momente erinnern, die ihr mit diesem Rezept verbindet.</span>
+    </div>
+    <div class="row recipe-form__step">
+        <div class="form recipe-form__item mb-3 flex-row justify-content-between">
+            <label for="describable-picture" class="input-type--file">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.84277 23.8433H21.8428C24.0519 23.8433 25.8428 22.0524 25.8428 19.8433V10.7004C25.8428 8.4913 24.0519 6.70044 21.8428 6.70044H8.84277C6.63363 6.70044 4.84277 8.4913 4.84277 10.7004V19.8433C4.84277 22.0524 6.63363 23.8433 8.84277 23.8433Z" stroke="#4D6D03"/>
+                    <path d="M11.8428 15.129C11.8428 13.2952 13.2944 11.8433 15.0428 11.8433C16.7911 11.8433 18.2428 13.2952 18.2428 15.129C18.2428 16.0452 17.879 16.8691 17.2945 17.4635C16.7129 18.0549 15.918 18.4147 15.0428 18.4147C14.1675 18.4147 13.3726 18.0549 12.7911 17.4635C12.2065 16.8691 11.8428 16.0452 11.8428 15.129Z" stroke="#4D6D03" stroke-width="2"/>
+                    <path d="M7.3623 5.84326H10.7223" stroke="#4D6D03" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M18.8428 9.84326H22.2028" stroke="#4D6D03" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M21.4996 26.1569L21.4996 20.5M21.4996 14.8431L21.4996 20.5M21.4996 20.5L15.8428 20.5M21.4996 20.5L27.1565 20.5" stroke="#98B70B" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <input type="file" class="input-type--file" id="describable-picture" name="describable-picture--preparation" accept="image/png, image/jpeg">
+            </label>
+            <div class="preview">
+                <img src="https://via.placeholder.com/160x110" alt="Rezept Vorschau">
+            </div>
+            <div class="preview">
+                <img src="https://via.placeholder.com/160x110" alt="Rezept Vorschau">
+            </div>
+            <div class="preview">
+                <img src="https://via.placeholder.com/160x110" alt="Rezept Vorschau">
+            </div>
+        </div>
+        <div class="form recipe-form__item text-input">
+            <textarea class="input-type--textarea" id="preparation" name="preparation" placeholder="Ein besonders schöner Tag war es, weil..."></textarea>
+        </div>
+    </div>
+    <div class="row recipe-form__navigation">
+        <div class="container--cta btn--skip">
+            <a href="/new-recipe/step-14.html" class="btn btn--tertiary btn--cta">
+                Überspringen
+            </a>
+        </div>
+        <div class="container--cta">
+            <a href="/new-recipe/step-12.html" class="btn btn--secondary btn--cta">
+                Zurück
+            </a>
+            <a href="/new-recipe/step-14.html" class="btn btn--primary btn--cta">
+                Weiter
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

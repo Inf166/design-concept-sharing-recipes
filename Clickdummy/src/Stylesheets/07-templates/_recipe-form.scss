@@ -60,6 +60,10 @@ $template: 'recipe-form';
         color: $primary;
         font-family: $font-family-monospace;
       }
+      svg {
+        height: 3.5rem;
+        width: 3.5rem;
+      }
     }
   }
   .#{$template}__description {
@@ -93,6 +97,9 @@ $template: 'recipe-form';
       display: flex;
       flex-direction: column;
 
+      &.text-input {
+        flex-grow: 1;
+      }
       .#{$template}__item {
         display: flex;
         flex-direction: row;
@@ -187,12 +194,53 @@ $template: 'recipe-form';
           button {
             width: 100%;
             border: none;
-            text-align: left;
+            justify-content: flex-start;
 
             span  {
               color: $primary;
             }
           }
+        }
+      }
+      .preview {
+        border-radius: $btn-border-radius;
+        border-color: $white;
+        height: 8rem;
+        width: 12rem;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .input-type--file {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 0;
+        background-color: $white;
+        border-radius: $btn-border-radius;
+        border-color: $white;
+        color: $success;
+        cursor: pointer;
+        height: 8rem;
+        width: 12rem;
+
+        &:focus,
+        &:hover {
+          color: $success;
+          background-color: darken($white, 6%);
+          border-color: lighten($white, 2%);
+        }
+
+        svg {
+          width: 7rem;
+          height: 7rem;
+        }
+        input[type="file"] {
+          display:none;
         }
       }
       .input-type--select {
@@ -257,6 +305,16 @@ $template: 'recipe-form';
             background-color: $primary;
           }
         }
+      }
+      .input-type--textarea {
+        outline: none;
+        border: 0.6rem solid $black;
+        border-radius: 0.6rem;
+        height: 100%;
+        width: 100%;
+        color: $primary;
+        font-size: 3rem;
+        font-family: $font-family-base;
       }
       .input-type--text {
         color: $primary;

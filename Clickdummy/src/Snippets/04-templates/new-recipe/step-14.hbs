@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="de" class="html">
+{{> ../../01-atoms/head }}
+<body>
+{{> ../../03-organisms/navbar/new-recipe }}
+{{> ../../02-molecules/header/new-recipe }}
+<div class="container recipe-form">
+    <div class="row recipe-form__progress">
+        <div class="progress__bar">
+            <div class="bar__progress progress--14-14"></div>
+        </div>
+        <div class="progress__info">
+            <h2>Schritt 14 von 14</h2>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.81496 15.8954L11.1619 25.1936C12.152 26.4466 14.0592 26.4258 15.0217 25.1515V25.1515L18.8271 20.1135L29.9858 6.38781" stroke="#4D6D03" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </div>
+    <div class="row recipe-form__description">
+        <h2>Zutaten angeben</h2>
+        <span class="tipp">Bitte gebe die Zutaten in derselben Reihenfolge an, wie du sie auch im Rezept nutzt.</span>
+    </div>
+    <div class="row recipe-form__step">
+        <div class="form">
+            <script type="text/javascript">
+                function removeFriend(object) {
+                    object.parentNode.removeChild(object);
+                }
+                function addFriend(friendName) {
+                    document.getElementById('friend-list').innerHTML = '<button class="categories__item" onclick="removeFriend(this)"><span>'
+                    + friendName +
+                    '</span><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/></svg></button>'
+                    + document.getElementById('friend-list').innerHTML;
+                }
+            </script>
+            <div id="friend-list" class="recipe-form__item categories">
+                <button class="categories__item" onclick="removeFriend(this)">
+                    <span>York Minor</span>
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="recipe-form__item input-category">
+                <input type="text" class="input-type--text input-category--text" id="friend" placeholder="Selma Slovenow">
+                <button class="input-category--add" onclick="addFriend(document.getElementById('friend').value);document.getElementById('friend').value = '';">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path class="icon--primary" d="M5.48179 15.9999H16M26.5182 15.9999H16M16 15.9999V5.48169M16 15.9999V26.5181" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="recipe-form__item">
+                <ul class="input-category-list">
+                    <li>
+                        <button class="categories__item" onclick="addFriend('Lara Lenow')">
+                            <span>Lara Lenow</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="categories__item" onclick="addFriend('Fred Fröhlich')">
+                            <span>Fred Fröhlich</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="categories__item" onclick="addFriend('Zedrik Zmirnik')">
+                            <span>Zedrik Zmirnik</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row recipe-form__navigation">
+        <div class="container--cta btn--skip">
+            <a href="/" class="btn btn--tertiary btn--cta">
+                Privat stellen
+            </a>
+        </div>
+        <div class="container--cta">
+            <a href="/new-recipe/step-13.html" class="btn btn--secondary btn--cta">
+                Zurück
+            </a>
+            <a href="/" class="btn btn--primary btn--cta">
+                Veröffentlichen
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
