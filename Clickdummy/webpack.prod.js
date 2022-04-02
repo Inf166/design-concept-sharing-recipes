@@ -18,6 +18,15 @@ module.exports = merge(common, {
         test: /\.(hbs)/i,
         loader: 'string-replace-loader',
         options: {
+          search: '.href = \'/',
+          replace: '.href = \'/design-concept-sharing-recipes/',
+          flags: 'g',
+        }
+      },
+      {
+        test: /\.(hbs)/i,
+        loader: 'string-replace-loader',
+        options: {
           search: 'a href="/',
           replace: 'a href="/design-concept-sharing-recipes/',
           flags: 'g',
