@@ -24,12 +24,10 @@
                     object.parentNode.parentNode.removeChild(object.parentNode);
                 }
                 function addIngredient() {
-                    document.getElementById('ingredient-list').innerHTML = '<div class="list__item"><div class="draggable"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="icon--primary" d="M28 19.0001L16.8944 24.5528C16.3314 24.8343 15.6686 24.8343 15.1056 24.5528L4 19" stroke="#F6F5EF" stroke-width="4" stroke-linecap="round"/><path class="icon--primary" d="M4 12.9999L15.1056 7.44721C15.6686 7.16568 16.3314 7.16569 16.8944 7.44721L28 13" stroke="#F6F5EF" stroke-width="4" stroke-linecap="round"/></svg></div><input type="text" class="input-type--text" id="preparation" placeholder="Zucker"><input type="text" class="input-type--text input--time" id="preparation" placeholder="200"><select class="input-type--select select--size" data-mdb-filter="true"><option value="stk">stk</option><option value="mg">mg</option><option value="g">g</option><option value="kg">kg</option><option value="cl">cl</option><option value="ml">ml</option> <option value="l">l</option> <option value="pck">pck</option> <option value="pr">pr</option><option value="tl">tl</option> <option value="el">el</option></select> <button class="btn btn--delete btn--round" onclick="removeIngredient(this)"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/></svg></button></div>'
+                    document.getElementById('ingredient-list').innerHTML = '<div class="list__item"><div class="draggable"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path class="icon--primary" d="M28 19.0001L16.8944 24.5528C16.3314 24.8343 15.6686 24.8343 15.1056 24.5528L4 19" stroke="#F6F5EF" stroke-width="4" stroke-linecap="round"/><path class="icon--primary" d="M4 12.9999L15.1056 7.44721C15.6686 7.16568 16.3314 7.16569 16.8944 7.44721L28 13" stroke="#F6F5EF" stroke-width="4" stroke-linecap="round"/></svg></div><input type="text" class="input-type--text ignore-elements" id="preparation" placeholder="Zucker"><input type="text" class="input-type--text input--time ignore-elements" id="preparation" placeholder="200"><select class="input-type--select select--size ignore-elements" data-mdb-filter="true"><option value="stk">stk</option><option value="mg">mg</option><option value="g">g</option><option value="kg">kg</option><option value="cl">cl</option><option value="ml">ml</option> <option value="l">l</option> <option value="pck">pck</option> <option value="pr">pr</option><option value="tl">tl</option> <option value="el">el</option></select> <button class="btn btn--delete btn--round ignore-elements" onclick="removeIngredient(this)"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/></svg></button></div>'
                     + document.getElementById('ingredient-list').innerHTML;
                 }
-                function initializeDraggableItems() {
 
-                }
             </script>
         <div class="form recipe-form__item list list--sortable" id="ingredient-list">
             <!--<div class="list__item">
@@ -39,8 +37,8 @@
                         <path class="icon--primary" d="M4 12.9999L15.1056 7.44721C15.6686 7.16568 16.3314 7.16569 16.8944 7.44721L28 13" stroke="#F6F5EF" stroke-width="4" stroke-linecap="round"/>
                     </svg>
                 </div>
-                <input type="text" class="input-type--text" id="preparation" placeholder="Zucker">
-                <input type="text" class="input-type--text input--time" id="preparation" placeholder="200">
+                <input type="text" class="input-type--text ignore-elements" id="preparation" placeholder="Zucker">
+                <input type="text" class="input-type--text input--time ignore-elements" id="preparation" placeholder="200">
                 <select class="input-type--select select--size" data-mdb-filter="true">
                     <option value="stk">stk</option>
                     <option value="mg">mg</option>
@@ -54,7 +52,7 @@
                     <option value="tl">tl</option>
                     <option value="el">el</option>
                 </select>
-                <button class="btn btn--delete btn--round" onclick="removeIngredient(this)">
+                <button class="btn btn--delete btn--round ignore-elements" onclick="removeIngredient(this)">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/>
                     </svg>
@@ -71,11 +69,6 @@
         </div>
     </div>
     <div class="row recipe-form__navigation">
-        <div class="container--cta btn--skip">
-            <a href="/new-recipe/step-8.html" class="btn btn--tertiary btn--cta">
-                Überspringen
-            </a>
-        </div>
         <div class="container--cta">
             <a href="/new-recipe/step-7.html" class="btn btn--secondary btn--cta">
                 Zurück
