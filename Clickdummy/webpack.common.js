@@ -64,11 +64,11 @@ module.exports = {
     }),
     new HtmlWebPackPlugin({
       filename: 'notifications.html',
-      template: path.resolve(__dirname, './src/Snippets/04-templates/index--notifications.hbs')
+      template: path.resolve(__dirname, './src/Snippets/04-templates/notifications.hbs')
     }),
     new HtmlWebPackPlugin({
-      filename: 'friends.html',
-      template: path.resolve(__dirname, './src/Snippets/04-templates/index--friends.hbs')
+      filename: 'friends/search.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/friend-list/search.hbs')
     }),
     new HtmlWebPackPlugin({
       filename: 'new-recipe.html',
@@ -83,8 +83,24 @@ module.exports = {
       template: path.resolve(__dirname, './src/Snippets/04-templates/profile.hbs')
     }),
     new HtmlWebPackPlugin({
-      filename: 'friend-list.html',
-      template: path.resolve(__dirname, './src/Snippets/04-templates/friendlist.hbs')
+      filename: 'friend/add.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/friend/add.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'friend/remove.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/friend/remove.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'friend/retrieve.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/friend/retrieve.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'friends/mine.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/friend-list/default.hbs')
+    }),
+    new HtmlWebPackPlugin({
+      filename: 'friends/foreign.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/friend-list/foreign.hbs')
     }),
     new HtmlWebPackPlugin({
       filename: 'settings.html',

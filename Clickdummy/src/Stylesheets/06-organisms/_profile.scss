@@ -82,6 +82,7 @@ $organism: 'profile';
   .slider__item {
     margin-right: 2.4rem;
 
+    a { text-decoration: none; }
     .profile__image {
       border: 0.4rem solid $primary;
       border-radius: 50%;
@@ -99,6 +100,9 @@ $organism: 'profile';
       font-weight: $font-weight-normal;
       font-size: 2rem;
       color: $gray-400;
+      display: flex;
+      flex-flow: column;
+      flex-wrap: nowrap;
     }
   }
 }
