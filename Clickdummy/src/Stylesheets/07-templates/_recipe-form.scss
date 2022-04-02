@@ -85,6 +85,7 @@ $template: 'recipe-form';
     justify-content: center;
     //TODO find a better solution
     overflow-y: scroll;
+    flex-wrap: nowrap;
 
     .form {
       height: fit-content;
@@ -145,6 +146,13 @@ $template: 'recipe-form';
           }
         }
       }
+      .draggable {
+
+        svg {
+          height: 100%;
+          width: 4rem;
+        }
+      }
       .input-category {
         border: 0.6rem solid $citron;
         border-radius: 1rem;
@@ -200,6 +208,9 @@ $template: 'recipe-form';
         color: $black;
         background: url("../Icons/Icon-Arrow-Down--black.svg") transparent no-repeat 95% !important;
 
+        &.select--size {
+          min-width: 9rem;
+        }
         &::-ms-expand { display: none; }
       }
       .input-type--radio {

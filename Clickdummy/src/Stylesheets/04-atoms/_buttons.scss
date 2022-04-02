@@ -125,6 +125,11 @@ button + button,
   border-color: $danger;
   color: $white;
 
+  &.#{$atom}--round {
+    border-radius: 10rem;
+    padding: 1rem;
+  }
+
   &:focus,
   &:hover {
     color: lighten($white, 20%);

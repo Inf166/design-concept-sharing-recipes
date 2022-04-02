@@ -22,7 +22,7 @@
         <div class="form">
             <script type="text/javascript">
                 function removeCategory(object) {
-                    object.classList.toggle('d-none');
+                    object.parentNode.removeChild(object);
                 }
                 function addCategory(categoryName) {
                     document.getElementById('categories-list').innerHTML = '<button class="categories__item" onclick="removeCategory(this)"><span>'

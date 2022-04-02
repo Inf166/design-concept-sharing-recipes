@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/Inf166/design-concept-sharing-recipes#readme",
   "dependencies": {
-    "clean-webpack-plugin": "^4.0.0"
+    "clean-webpack-plugin": "^4.0.0",
+    "sortablejs": "^1.15.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",

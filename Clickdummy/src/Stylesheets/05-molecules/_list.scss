@@ -1,0 +1,19 @@
+$molecules: 'list';
+
+// List
+.#{$molecules} {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+
+  .#{$molecules}__item  {
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+  }
+}
+
+// Modifiers
+.#{$molecules}--sortable {
+
+}
