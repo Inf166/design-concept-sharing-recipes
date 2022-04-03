@@ -63,6 +63,10 @@ module.exports = {
       template: path.resolve(__dirname, './src/Snippets/04-templates/index.hbs')
     }),
     new HtmlWebPackPlugin({
+      filename: 'home.html',
+      template: path.resolve(__dirname, './src/Snippets/04-templates/home.hbs')
+    }),
+    new HtmlWebPackPlugin({
       filename: 'notifications.html',
       template: path.resolve(__dirname, './src/Snippets/04-templates/notifications.hbs')
     }),

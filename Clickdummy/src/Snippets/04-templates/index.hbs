@@ -1,10 +1,163 @@
 <!DOCTYPE html>
 <html lang="de" class="html">
 {{> ../01-atoms/head }}
-<body>
-{{> ../03-organisms/navbar/default }}
-{{> ../02-molecules/header/default }}
-{{> ../03-organisms/search/default }}
-{{> ../02-molecules/card/default }}
+<body class="login">
+<script type="text/javascript">
+    function loadIn() {
+        document.getElementById('startup').classList.add('loaded');
+    }
+    function logIn() {
+        document.getElementById('signIn').classList.add('d-none');
+        document.getElementById('startup').classList.add('d-none');
+        document.getElementById('logIn').classList.remove('d-none');
+    }
+    function signIn() {
+        document.getElementById('logIn').classList.add('d-none');
+        document.getElementById('startup').classList.add('d-none');
+        document.getElementById('signIn').classList.remove('d-none');
+    }
+    function showPassword() {
+        var input = document.getElementById('password');
+        if (input.type === 'password') {
+            input.type = 'text';
+            document.getElementById('eye-open').classList.remove('d-none');
+            document.getElementById('eye-closed').classList.add('d-none');
+        } else {
+            input.type = 'password';
+            document.getElementById('eye-open').classList.add('d-none');
+            document.getElementById('eye-closed').classList.remove('d-none');
+        }
+    }
+    document.addEventListener('DOMContentLoaded', function(event) {
+        setTimeout(function () {
+            loadIn();
+        }, 1000);
+        document.getElementById('startup').addEventListener('click', function() {
+            logIn()
+        });
+    });
+</script>
+<div class="startup" id="startup">
+    <div class="logo">
+        <svg width="183" height="183" viewBox="0 0 183 183" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_103_1035)">
+                <rect width="183" height="183" fill="#4D6D03"/>
+                <path d="M153 134.364H30.1223M153 134.364V18C153 9.16344 145.837 2 137 2H46.1223C37.2858 2 30.1223 9.16345 30.1223 18V134.364M153 134.364V134.364C153 137.175 150.409 139.459 148.534 141.554C143.662 146.998 144.329 161.349 150.535 164.353C151.801 164.965 153 166.049 153 167.455V167.455C153 168.86 151.86 170 150.455 170H45.4816C24.8076 169.994 24.8716 134.357 45.4814 134.364H30.1223M30.1223 134.364L30 152.182" stroke="#F6F5EF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M58 149H85C86.1046 149 87 149.895 87 151V179.708C87 181.659 84.4345 182.485 83.1835 180.989C74.9553 171.147 68.8489 170.957 59.7511 181.354C58.4879 182.797 56 181.955 56 180.037V151C56 149.895 56.8954 149 58 149Z" fill="#F6F5EF"/>
+                <path d="M95.125 73.1163L116.53 95.3132C117.351 96.1637 117.351 97.5107 116.53 98.3612C115.667 99.2565 114.233 99.2565 113.37 98.3612L92.075 76.2791L84.1048 68.0141C83.3509 67.2323 82.3115 66.7907 81.2254 66.7907H73.2253C72.5845 66.7907 71.953 66.6367 71.3841 66.3418L70.3325 65.7965C69.5958 65.4145 68.9961 64.8129 68.6166 64.0749L57.4429 42.3495C57.1518 41.7836 57 41.1564 57 40.52V33.5814C57 33.0174 57.6917 32.746 58.0752 33.1596L95.125 73.1163Z" fill="#F6F5EF"/>
+                <path d="M91.6905 75.3571L71.5352 98.1557C70.669 99.1355 69.1405 99.1355 68.2743 98.1557C67.5466 97.3325 67.5466 96.096 68.2743 95.2729L88.7857 72.0714L91.6905 68.7857L96.4968 63.349C97.1432 62.6179 97.5 61.6756 97.5 60.6997V51.5589C97.5 51.002 97.6163 50.4512 97.8415 49.9418L98.7016 47.996C98.8678 47.62 99.091 47.2718 99.3633 46.9638L111.846 32.8443C112.712 31.8645 114.24 31.8645 115.107 32.8443C115.834 33.6675 115.834 34.904 115.107 35.7271L103.131 49.2729C102.404 50.096 102.404 51.3325 103.131 52.1557C103.998 53.1355 105.526 53.1355 106.392 52.1557L117.655 39.4157C118.521 38.4359 120.05 38.4359 120.916 39.4157C121.644 40.2389 121.644 41.4754 120.916 42.2986L108.941 55.8443C108.213 56.6675 108.213 57.904 108.941 58.7271C109.807 59.7069 111.336 59.7069 112.202 58.7271L123.465 45.9871C124.331 45.0074 125.86 45.0074 126.726 45.9871C127.453 46.8103 127.453 48.0468 126.726 48.87L113.92 63.3548C113.626 63.6874 113.279 63.9687 112.893 64.1872L111.488 64.9817C110.887 65.3215 110.209 65.5 109.519 65.5H102.208C101.061 65.5 99.97 65.9918 99.2107 66.8506L94.5952 72.0714L91.6905 75.3571Z" fill="#F6F5EF"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_103_1035">
+                    <rect width="183" height="183" fill="white"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <h1>Mein Kochbuch</h1>
+    </div>
+    <span>Version Alpha-0.01<br>©Maispace.de 2021</span>
+</div>
+<div class="login d-none" id="logIn">
+    <h2>Mein Kochbuch</h2>
+    <label for="email">E-Mail oder Benutzername</label>
+    <div class="email">
+        <input type="email" id="email" class="input" placeholder="example@domain.com" oninput="if(document.getElementById('email').value){document.getElementById('email-clear').classList.remove('d-none');}else{document.getElementById('email-clear').classList.add('d-none');}"/>
+        <button type="button" id="email-clear" class="btn d-none" onclick="document.getElementById('email').value='';document.getElementById('email-clear').classList.add('d-none');">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon--primary" d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+    <label class="forgot-password" for="password">
+        <span>Passwort</span>
+        <a href="#">Passwort vergessen?</a>
+    </label>
+    <div class="password">
+        <input type="password" id="password" class="input" placeholder="●●●●●●●●●●●●●●" oninput="if(document.getElementById('password').value){document.getElementById('clear').classList.remove('d-none');}else{document.getElementById('clear').classList.add('d-none');}"/>
+        <button type="button" id="clear" class="btn d-none" onclick="showPassword();">
+            <span id="eye-open" class="d-none">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="icon--primary" d="M1.75 16.3748C12.75 5.87479 21.25 6.8748 30.25 16.3748C19.25 25.8748 12.25 24.8749 1.75 16.3748Z" stroke="#F6F5EF" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </span>
+            <span id="eye-closed">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="icon--primary" d="M1.75 11.5C12.25 20.0001 19.25 19 30.25 11.5M6.25 16L4.75 18M12.25 18L11.25 20M18.25 18L19.25 20.5M24.25 16L26.25 18.5" stroke="#F6F5EF" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </span>
+        </button>
+    </div>
+    <div class="container--cta">
+        <button onclick="signIn()" class="btn btn--tertiary btn--cta">
+            Registrieren
+        </button>
+        <button onclick="window.location.href = '/home.html'" class="btn btn--secondary btn--cta">
+            Einloggen
+        </button>
+    </div>
+</div>
+<div class="sign-in d-none" id="signIn">
+    <h2>Dein Kochbuch</h2>
+    <label for="firstname">Vorname</label>
+    <div class="firstname">
+        <input type="text" id="firstname" class="input" placeholder="Lisa" oninput="if(document.getElementById('firstname').value){document.getElementById('firstname-clear').classList.remove('d-none');}else{document.getElementById('firstname-clear').classList.add('d-none');}"/>
+        <button type="button" id="firstname-clear" class="btn d-none" onclick="document.getElementById('firstname').value='';document.getElementById('firstname-clear').classList.add('d-none');">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon--primary" d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+    <label for="lastname">Nachname</label>
+    <div class="lastname">
+        <input type="text" id="lastname" class="input" placeholder="Schmidt" oninput="if(document.getElementById('lastname').value){document.getElementById('lastname-clear').classList.remove('d-none');}else{document.getElementById('lastname-clear').classList.add('d-none');}"/>
+        <button type="button" id="lastname-clear" class="btn d-none" onclick="document.getElementById('lastname').value='';document.getElementById('lastname-clear').classList.add('d-none');">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon--primary" d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+    <label for="username">Nutzername</label>
+    <div class="username">
+        <input type="text" id="username" class="input" placeholder="LisaSchmidt97" oninput="if(document.getElementById('username').value){document.getElementById('username-clear').classList.remove('d-none');}else{document.getElementById('username-clear').classList.add('d-none');}"/>
+        <button type="button" id="username-clear" class="btn d-none" onclick="document.getElementById('username').value='';document.getElementById('username-clear').classList.add('d-none');">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon--primary" d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+    <label for="email">E-Mail</label>
+    <div class="email">
+        <input type="email" id="email" class="input" placeholder="example@domain.com" oninput="if(document.getElementById('email').value){document.getElementById('email-clear').classList.remove('d-none');}else{document.getElementById('email-clear').classList.add('d-none');}"/>
+        <button type="button" id="email-clear" class="btn d-none" onclick="document.getElementById('email').value='';document.getElementById('email-clear').classList.add('d-none');">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="icon--primary" d="M23 23L16 16M9 9L16 16M16 16L9 23M16 16L23 9" stroke="#F6F5EF" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+        </button>
+    </div>
+    <label for="password">Passwort</label>
+    <div class="password">
+        <input type="password" id="password" class="input" placeholder="●●●●●●●●●●●●●●" oninput="if(document.getElementById('password').value){document.getElementById('clear').classList.remove('d-none');}else{document.getElementById('clear').classList.add('d-none');}"/>
+        <button type="button" id="clear" class="btn d-none" onclick="showPassword();">
+            <span id="eye-open" class="d-none">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="icon--primary" d="M1.75 16.3748C12.75 5.87479 21.25 6.8748 30.25 16.3748C19.25 25.8748 12.25 24.8749 1.75 16.3748Z" stroke="#F6F5EF" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </span>
+            <span id="eye-closed">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="icon--primary" d="M1.75 11.5C12.25 20.0001 19.25 19 30.25 11.5M6.25 16L4.75 18M12.25 18L11.25 20M18.25 18L19.25 20.5M24.25 16L26.25 18.5" stroke="#F6F5EF" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </span>
+        </button>
+    </div>
+    <div class="container--cta">
+        <button onclick="logIn()" class="btn btn--tertiary btn--cta">
+            Schon registriert?
+        </button>
+        <button onclick="window.location.href = '/home.html'" class="btn btn--secondary btn--cta">
+            Registrieren
+        </button>
+    </div>
+</div>
 </body>
 </html>

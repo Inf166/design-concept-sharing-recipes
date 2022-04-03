@@ -1,0 +1,134 @@
+$template: 'login';
+
+// Login
+.#{$template} {
+  background-color: $primary;
+  color: $white;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  .startup, .login, .sign-in {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+
+  .startup {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 3s;
+    transition-timing-function: cubic-bezier(.17,.67,.83,.67);
+    transition-delay: 1s;
+
+    &.loaded {
+      opacity: 1;
+    }
+
+    .logo {
+
+      svg {
+        width: 50vw;
+        height: 50vw;
+        margin-bottom: 2rem;
+      }
+      h1 {
+        text-align: center;
+      }
+    }
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  .login, .sign-in {
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 5rem;
+
+    div + label,
+    div + .container--cta {
+      margin-top: 3rem;
+    }
+
+    label, h2 {
+      font-family: $font-family-base;
+      font-size: 3rem;
+      color: $white;
+      font-weight: $font-weight-bold;
+    }
+    h2 {
+      font-size: 4rem;
+    }
+    label {
+
+      &.forgot-password {
+        display: flex;
+        flex-flow: row;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 100%;
+
+        a {
+          text-decoration: none;
+          font-family: $font-family-display;
+          font-size: 2rem;
+          color: $white;
+        }
+      }
+    }
+    .container--cta {
+      padding: 0;
+    }
+    .btn--tertiary {
+      border-color: $white;
+      color: $white;
+    }
+    .firstname, .lastname, .username, .email, .password {
+      display: flex;
+      flex-flow: row;
+      flex-wrap: nowrap;
+      width: 100%;
+
+      background-color: $white;
+      border-radius: 1rem;
+      overflow: hidden;
+
+      .input {
+        min-height: 7.2rem;
+
+        border: none;
+        background: transparent;
+        flex-grow: 1;
+        font-size: 3rem;
+        font-family: $font-family-base;
+        outline: none;
+
+        padding: 1rem 2rem;
+        font-size: 2.4rem;
+        line-height: 1.25;
+
+        &::-webkit-search-cancel-button {
+          display: none;
+        }
+      }
+      .btn {
+        border-radius: 0;
+        background-color: transparent;
+
+        .icon--primary {
+          stroke: $gray-300;
+        }
+      }
+    }
+  }
+}
