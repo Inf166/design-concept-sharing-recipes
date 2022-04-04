@@ -18,7 +18,19 @@
         <h2>Schwierigkeitsgrad festlegen</h2>
         <span class="tipp">Tipp: Das Wählen eines Schwierigkeitsgrades soll es anderen Nutzern erleichtern die Machbarkeit eines Rezepts einzuschätzen.</span>
     </div>
-    <div class="row recipe-form__step step--center">
+    <div class="row recipe-form__step">
+        <script type="text/javascript">
+            // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+            let vh = window.innerHeight * 0.01;
+            // Then we set the value in the --vh custom property to the root of the document
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+            // We listen to the resize event
+            window.addEventListener('resize', () => {
+              // We execute the same script as before
+              let vh = window.innerHeight * 0.01;
+              document.documentElement.style.setProperty('--vh', `${vh}px`);
+            });
+        </script>
         <div class="form">
             <div class="recipe-form__item">
                 <input type="radio" class="input-type--radio" id="easy" name="difficulty-level" value="1"><label for="easy"><span></span>Einfach</label>
@@ -31,15 +43,15 @@
             </div>
         </div>
     </div>
-    <div class="row recipe-form__navigation">
-        <div class="container--cta">
-            <a href="/new-recipe.html" class="btn btn--secondary btn--cta">
-                Zurück
-            </a>
-            <a href="/new-recipe/step-3.html" class="btn btn--primary btn--cta">
-                Weiter
-            </a>
-        </div>
+</div>
+<div class="row">
+    <div class="container--cta">
+        <a href="/new-recipe.html" class="btn btn--secondary btn--cta">
+            Zurück
+        </a>
+        <a href="/new-recipe/step-3.html" class="btn btn--primary btn--cta">
+            Weiter
+        </a>
     </div>
 </div>
 </body>

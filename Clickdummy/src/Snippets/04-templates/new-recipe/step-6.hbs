@@ -19,6 +19,18 @@
         <span class="tipp">Bitte wähle die passende Herkunft aus, um es dir und anderen Nutzern zu erleichtern, das Rezept wiederzufinden.</span>
     </div>
     <div class="row recipe-form__step">
+        <script type="text/javascript">
+            // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+            let vh = window.innerHeight * 0.01;
+            // Then we set the value in the --vh custom property to the root of the document
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+            // We listen to the resize event
+            window.addEventListener('resize', () => {
+              // We execute the same script as before
+              let vh = window.innerHeight * 0.01;
+              document.documentElement.style.setProperty('--vh', `${vh}px`);
+            });
+        </script>
         <div class="form">
             <script type="text/javascript">
                 function removeCategory(object) {
@@ -68,20 +80,20 @@
             </div>
         </div>
     </div>
-    <div class="row recipe-form__navigation">
-        <div class="container--cta btn--skip">
-            <a href="/new-recipe/step-7.html" class="btn btn--tertiary btn--cta">
-                Überspringen
-            </a>
-        </div>
-        <div class="container--cta">
-            <a href="/new-recipe/step-5.html" class="btn btn--secondary btn--cta">
-                Zurück
-            </a>
-            <a href="/new-recipe/step-7.html" class="btn btn--primary btn--cta">
-                Weiter
-            </a>
-        </div>
+</div>
+<div class="row">
+    <div class="container--cta btn--skip">
+        <a href="/new-recipe/step-7.html" class="btn btn--tertiary btn--cta">
+            Überspringen
+        </a>
+    </div>
+    <div class="container--cta">
+        <a href="/new-recipe/step-5.html" class="btn btn--secondary btn--cta">
+            Zurück
+        </a>
+        <a href="/new-recipe/step-7.html" class="btn btn--primary btn--cta">
+            Weiter
+        </a>
     </div>
 </div>
 </body>

@@ -19,6 +19,18 @@
         <span class="tipp">Bitte halte dich möglichst an die Reihenfolge der Zutaten um das Nachkochen zu erleichtern.</span>
     </div>
     <div class="row recipe-form__step">
+        <script type="text/javascript">
+            // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+            let vh = window.innerHeight * 0.01;
+            // Then we set the value in the --vh custom property to the root of the document
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+            // We listen to the resize event
+            window.addEventListener('resize', () => {
+              // We execute the same script as before
+              let vh = window.innerHeight * 0.01;
+              document.documentElement.style.setProperty('--vh', `${vh}px`);
+            });
+        </script>
         <div class="form recipe-form__item mb-3">
             <label for="describable-picture" class="input-type--file">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,15 +47,15 @@
             <textarea class="input-type--textarea" id="preparation" name="preparation" placeholder="Zunächst wird die Rübe..."></textarea>
         </div>
     </div>
-    <div class="row recipe-form__navigation">
-        <div class="container--cta">
-            <a href="/new-recipe/step-10.html" class="btn btn--secondary btn--cta">
-                Zurück
-            </a>
-            <a href="/new-recipe/step-12.html" class="btn btn--primary btn--cta">
-                Weiter
-            </a>
-        </div>
+</div>
+<div class="row">
+    <div class="container--cta">
+        <a href="/new-recipe/step-10.html" class="btn btn--secondary btn--cta">
+            Zurück
+        </a>
+        <a href="/new-recipe/step-12.html" class="btn btn--primary btn--cta">
+            Weiter
+        </a>
     </div>
 </div>
 </body>

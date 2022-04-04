@@ -5,8 +5,10 @@ $template: 'recipe-form';
   display: flex;
   flex-direction: column;
   // TODO Find a better solution
-  height: calc(100vh - 34rem );
-  max-height: calc(100vh - 34rem );
+  height: 100vh;
+  height: calc( ( var(--vh, 1vh ) * 100 - 29.5rem );
+  max-height: 100vh;
+  max-height: calc( ( var(--vh, 1vh ) * 100 - 29.5rem );
 
   .#{$template}__progress {
     display: flex;
@@ -346,12 +348,6 @@ $template: 'recipe-form';
           //display: none;
         }
       }
-    }
-  }
-  .#{$template}__navigation {
-    .container--cta {
-      padding-left: 0;
-      padding-right: 0;
     }
   }
 }

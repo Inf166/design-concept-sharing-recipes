@@ -20,6 +20,18 @@
     </div>
     <div class="row recipe-form__step">
         <script type="text/javascript">
+            // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+            let vh = window.innerHeight * 0.01;
+            // Then we set the value in the --vh custom property to the root of the document
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+            // We listen to the resize event
+            window.addEventListener('resize', () => {
+              // We execute the same script as before
+              let vh = window.innerHeight * 0.01;
+              document.documentElement.style.setProperty('--vh', `${vh}px`);
+            });
+        </script>
+        <script type="text/javascript">
                 function removeIngredient(object) {
                     object.parentNode.parentNode.removeChild(object.parentNode);
                 }
@@ -77,6 +89,16 @@
                 Weiter
             </a>
         </div>
+    </div>
+</div>
+<div class="row">
+    <div class="container--cta">
+        <a href="/new-recipe/step-7.html" class="btn btn--secondary btn--cta">
+            Zurück
+        </a>
+        <a href="/new-recipe/step-9.html" class="btn btn--primary btn--cta">
+            Weiter
+        </a>
     </div>
 </div>
 </body>
