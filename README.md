@@ -1,3 +1,12 @@
+<p>
+    <a href="https://badges.pufler.dev" alt="https://badges.pufler.dev">
+        <img alt="https://badges.pufler.dev/updated/inf166/design-concept-sharing-recipes?style=for-the-badge&color=yellow"    src="https://badges.pufler.dev/updated/inf166/design-concept-sharing-recipes?style=for-the-badge&color=yellow">
+    </a>
+    <a href="https://badges.pufler.dev" alt="https://badges.pufler.dev">
+        <img alt="https://badges.pufler.dev/created/inf166/design-concept-sharing-recipes?style=for-the-badge&color=green" src="https://badges.pufler.dev/created/inf166/design-concept-sharing-recipes?style=for-the-badge&color=green">
+    </a>
+</p>
+
 # Praxisprojekt Sommersemester 2021 Mai
 
 ## [WIP][ClickDummy](https://inf166.github.io/design-concept-sharing-recipes/)
